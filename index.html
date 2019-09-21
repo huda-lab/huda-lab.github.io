@@ -1,5 +1,154 @@
-<html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+</style>
+<head>
+  <script src="members.js"></script>
+  <script src="news.js"></script>
+  <script src="projects.js"></script>
+  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script type="text/javascript">
+    var toImage = function(d){
+      if(d["image"] && d.image != "") {
+        return '<div class="member">'
+                + '<div class="member-image" style="border-color: whitesmoke">'
+                + '<img class="member-img" src="' + d.image + '">'
+                + '<div><a href="'+d.website+'">' + d.name + '</a>'
+                + '</br><small>' + d.title + '</small>'
+                + '</div></div>'
+                + '</div>';
+      }
+      else{
+        return '<div class="nopic">'+d.name+'</div>'
+      }
+    };
+    var display_members = function(){
+      var o = '<div class = "members">';
+      $.each(members, function (i, d) {
+        if(d.type != "undergrad" || d.year > 2019)
+          o += toImage(d);
+      });
+      o += '</div>';
+      o += '<div> Past Students </div><div><ul>';
+      $.each(members, function (i, d) {
+        if(d.type == "undergrad" && d.year <= 2019)
+          o += '<li>' + d.name + '</li>';
+      });
+      o += '</ul></div>';
+      $('#members').html(o);
+    };
+
+    var display_projects = function(){
+      var o = '<div class = "projects">';
+      $.each(projects, function (i, d) {
+        var p = '<div class="project">'
+                + '<div class="project-image" style="border-color: whitesmoke">'
+                  + '<img class="project-img" src="' + d.thumbnail + '">'
+                + '</div>'
+                + '<div class="project-content">'
+                  + '<div style="color: var(--c-neutral-header)">' + d.title + "</div>" + d.subtitle + '<div class="authors" style="color: var(--c-bright-header)">' + d.authors[0];
+                $.each(d.authors, function(i,a){
+                    p += ((i > 0)? ", " + a: "");
+                    });
+                p += "</div>"
+                + '</div>'
+                + '</div>';
+        o += p;
+      });
+      o += '</div>';
+      $('#projects').html(o);
+    };
+
+    var display_news = function(){
+      var o = "";
+      $.each(news.sort(function(a, b){return a.date < b.date;}), function (i, d) {
+        if(i < 5) {
+            var p = '<div class="news-item">'
+                + '<div class="newsdate">' + d.date + '</div>'
+                + '<div class="headline"><a href="' + d.link + '">'+ d.headline + "</a></div>"
+                /*+ ((d["abstract"] && d.abstract != "") ? '<div class="abstract">' + d.abstract + "</div>" : "")*/
+                + '</div>';
+                o += p;
+        }
+      });
+      o += '</div>';
+      $('#newsroll').html(o);
+    };
+
+    $(document).ready(function () {
+      display_members();
+      display_projects();
+      display_news();
+    });
+
+
+  </script>
+
+
+</head>
 <body>
-  Under Construction
+<div class="content">
+
+  <div class ="menu">
+  <a href = "#about" id="logo"><img height="100px" src="images/huda-logo-compact.png"></a>
+  <a href = "#joinus">Join Us</a>
+  <a href = "#teaching">Teaching</a>
+  <a href = "#projects-label">Projects</a>
+  <a href = "#members-label">Researchers</a>
+  </div>
+  <div>
+
+  </div>
+
+  <div id = "topcontent">
+  <div id="about">
+    <h2>What are we about?</h2>
+ <p>The goal of the Human-Data Interaction Lab (HuDa) is to research methods at the intersection of data management, data science, and interactive systems to enable the derivation of insights from data and to support data-driven decision-making. Our approach is human-centric in that we aim to understand how humans at any level of data-literacy (which include analysts, scientists, journalists, researchers, data enthusiasts) interact with data.  Through this understanding, we build formalizations and systems that that make it easier for humans to effectively interact with data. HuDa, thus, addresses the critical bottleneck in today’s data analysis: this bottleneck is not the lack of data, or our ability to analyze it at scale, but the lack of human cognition and time to build and understand data processes.</p>
+  <p>The HuDa Interaction Lab has made several research contributions in the following areas in the past six years</p>
+    <ul>
+      <li>Novel querying paradigms for prescriptive analytics.</li>
+      <li>Example-driven Interfaces for data tasks.</li>
+      <li>Debugging complex data analytics.</li>
+      <li>Teaching and democratizing data science.</li>
+    </ul>
+    <p>Incidentally, Huda in arabic means guidance. We hope to build tools that guide humans through better data analysis and data-driven decision-making.</p>
+  </div>
+  <div id="news">
+    <h2>Latest News</h2>
+    <div id="newsroll">
+
+    </div>
+  </div>
+  </div>
+
+  <h2 id="projects-label">Projects</h2>
+  <div id="projects">
+
+  </div>
+
+  <h2 id="members-label">Researchers</h2>
+  <div id="members">
+
+  </div>
+
+    <h2 id="teaching-label">Teaching</h2>
+    <div id="teaching">
+
+    </div>
+
+
+  <h2 id="joinus-label">Join Us</h2>
+  <div id="joinus">
+    Want to a be Research Assistant, post-doc, graduate or undergraduate researcher at the HuDa Interaction Lab - we are hiring! Please email the PI.
+  </div>
+
+</div>
+
+
 </body>
-</html>
+

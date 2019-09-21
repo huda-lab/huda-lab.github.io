@@ -1,0 +1,267 @@
+:root {
+  --c-pop: #fdc029;
+  --c-bright-header: #aa3d01; /*#F13C20;*/
+  --c-neutral-header: #df861d;/*#4056A1*/;
+  --c-dark-header: #2b5865;
+  --c-text: black;
+}
+
+.content{
+  max-width: 960px;
+  margin: auto;
+}
+
+body{
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+div.content{
+  color: var(--c-text);
+}
+div.content p{
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-bottom:5px;
+  text-transform: uppercase;
+  color: var(--c-neutral-header);
+}
+
+.menu {
+  background: white;
+  width: 100%;
+  height: 110px;
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  z-index: 100;
+}
+
+.menu a, a:visited{
+  float: right;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+.menu a:hover{
+  color: var(--c-bright-header);
+}
+
+#logo{
+  float:left;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a{
+  text-decoration: none;
+}
+
+#topcontent{
+  width: 960px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 5px;
+}
+#about{
+  min-height: 320px;
+}
+#newsroll{
+  overflow-y: auto;
+}
+.news-item{
+  margin-bottom: 10px;
+}
+.headline{
+
+}
+.newsdate{
+  color: var(--c-bright-header);
+}
+
+.projects{
+  display: grid;
+  width: 960px;
+  grid-template-columns: auto auto;
+  grid-auto-flow: row;
+  grid-column-gap: 5px;
+}
+div.project{
+  display: grid;
+  grid-template-columns: 140px auto;
+  grid-auto-flow: row;
+  grid-column-gap: 5px;
+}
+div.project-image{
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #555;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+.project-img {
+  width: 200px;
+  /*height: 80px;*/
+  position: relative;
+  overflow: hidden;
+}
+div.project-content{
+
+}
+.members{
+  display: grid;
+  width: 960px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: row dense;
+  grid-column-gap: 5px;
+}
+div.member{
+  display: grid;
+  width: 160px;
+}
+.member-img{
+  width: 200px;
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+div.member-image{
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #555;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+/*This is the name information within the member's image*/
+.member-image div{
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 2px 10px;
+  text-align: right;
+}
+
+#calendar {
+  margin: 20px;
+}
+
+/* width */
+#spots::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+#spots::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px grey;*/
+  border-radius: 0px;
+}
+
+/* Handle */
+#spots::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+#spots::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+ul.spots{
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+}
+ul.spots li {
+  display: inline;
+  height: 300px;
+}
+
+img:hover{
+  filter: grayscale(5%);
+}
+
+.grid{
+  stroke: #bcbdbf;
+  stroke-width:1
+}
+.vgrid{
+  stroke: #bcbdbf;
+  stroke-width:1
+}
+
+.day.hover {
+  stroke: #6d6E70;
+  stroke-width: 2;
+}
+.day.focus {
+  stroke: #ffff33;
+  stroke-width: 2;
+}
+.daylabel{
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+}
+.timelabel{
+  font-family: "Helvetica Neue";
+  font-size: 12px
+}
+.weeklabel{
+  font-family: "Helvetica Neue";
+  font-size: 16px
+}
+.absent{
+  fill-opacity: 0.8;
+  fill: white;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  font: 12px "Helvetica Neue";
+  background: whitesmoke;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#tutors{
+  display: grid;
+  width: 900px;
+  grid-template-columns: auto auto;
+  grid-auto-flow: row;
+  grid-column-gap: 5px;
+}
+
+h2.name{
+  font-size: 16px;
+  margin: 0px;
+  color: black;
+  font-weight: normal;
+}
+
+
+
+
+
