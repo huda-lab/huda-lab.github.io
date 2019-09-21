@@ -81,7 +81,7 @@ var members =  [
         id: 7,
         name: "Min Kyu Jung",
         title: "Student Researcher",
-        image: "images/members/min.jpg",
+        image: "images/members/minkyu.jpg",
         email: "mkj280@nyu.edu",
         website: "",
         year: 2020,
