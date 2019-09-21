@@ -33,8 +33,8 @@ var projects = [
     },
     {
         id: 13,
-        title: "Scalable Package Queries in Relational Database Systems",
-        subtitle: "Using Approximation techniques to scale and speed up package queries",
+        title: "Scalable Package Queries",
+        subtitle: "Scaling package queries over probabilistic databases",
         authors: ["Matteo Brucato", "Peter Haas", "Alexandra Meliou", "Azza Abouzied"],
         members: [19, 0],
         grants: ["NSF Award IIS-1420941", "NSF EAGER In-Database Prescriptive Analytics (2019)"],
