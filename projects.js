@@ -64,7 +64,10 @@ var projects = [
                 txt: "Git",
                 ref: ""
             }
-        ]
+        ],
+        abstract: "Traditional database queries follow a simple model: they define constraints that each tuple in the result must satisfy. This model is computationally efficient, as the database system can evaluate the query conditions on each tuple individually. However, many practical, real-world problems require a collection of result tuples to satisfy constraints collectively, rather than individually. In this project, we present package queries, a new query model that extends traditional database queries to handle complex constraints and preferences over answer sets. We develop a full-fledged package query system, implemented on top of a traditional database engine. Our work makes several contributions. First, we design PaQL, a SQL-based query language that supports the declarative specification of package queries and a stochastic variant that supports probabilistic constraints over uncertain data. Second, we present a fundamental evaluation strategy that combines the capabilities of databases and constraint optimization solvers to derive solutions to package queries. Third, we introduce an offline data partitioning strategy allowing query evaluation to scale to large data sizes. Fourth, we introduce SKETCHREFINE, a scalable algorithm for package evaluation, with strong approximation guarantees. Finally, we present extensive experiments over real-world and benchmark data that demonstrate our scalable and efficient runtime performance over large datasets.",
+        teaserpic: "images/projects/packagebuilder.png",
+        thumbnail: "images/projects/packagebuilder-thumb.png"
     },
     {
         id: 16,
