@@ -4,7 +4,6 @@
     <script src="members.js"></script>
     <script src="news.js"></script>
     <script src="projects.js"></script>
-    <script src="courses.js"></script>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -81,21 +80,6 @@
             $('#newsroll').html(o);
         };
 
-        var display_courses=function(){
-            var c = "";
-            $.each(courses, function(i, d) {
-                c += '<div class ="crsdiv" style="margin-top: 5px">';
-                c += '<h2 class="title">' + d.title.toLowerCase() + '</h2>';
-                c += '<p class = "links" style= "font-size: smaller">';
-                c += '<a href="' + d.syllabus + '">Syllabus | </a>';
-                $.each(d.links, function(li, ld){
-                    c += '<a href=' + ld.ref + '>' + ld.year + '</a> ' + (li < (d.links.length - 1) ? ' | ' : ' ');
-                });
-                c += '</p>'
-                c += '</div>'
-            });
-            $('#courses').html(c);
-        }
         $(document).ready(function () {
             display_members();
             display_projects();
@@ -163,6 +147,10 @@
         we have designed and taught the following courses:
         </p>
         <div id="courses">
+            <ul>
+                <li><a href="syllabi/Data-Syllabus-Abouzied-2016.pdf">Core X Data</a></li>
+                <li><a href="syllabi/Capstone-InteractiveSystems-SyllabusSpring2019.pdf>">Capstone: Systems for Interactive Data Analysis</a></li>
+            </ul>
 
         </div>
     </div>

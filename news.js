@@ -12,6 +12,12 @@ var news =  [
         date: "August 29, 2019",
     },
     {
+        headline: "Professor Azza Abouzied delivers keynote at DSIA 2018 (IEEE VIS) on building example-driven interfaces for data tasks",
+        link: "https://www.interactive-analysis.org/year/2018/",
+        abstract: "",
+        date: "October 21, 2018",
+    },
+    {
         headline: "Miro Mannino & Maeda Hanafi present their work at HILDA in Amsterdam",
         link: "https://hilda.io/2019/",
         abstract: "",
