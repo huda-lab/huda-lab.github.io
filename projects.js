@@ -78,7 +78,7 @@ var projects = [
                 ref: ""
             }
         ],
-        abstract: "Texture is a framework for data extraction over print documents that allows end-users to construct data extraction rules over an inferred document structure.",
+        abstract: "We describe Texture, a framework for data extraction over print documents that allows end-users to construct data extraction rules over an inferred document structure. To effectively infer this structure, we enable developers to contribute multiple heuristics that identify different structures in English print documents, crowd-workers and annotators to manually label these structures, and end-users to search and decide which heuristics to apply and how to boost their performance with the help of ground-truth data collected from crowd-workers and annotators. Texture’s design supports each of these different user groups through a suite of tools. We demonstrate that even with a handful of student-developed heuristics, we can achieve reasonable precision and recall when identifying structures across different document collections.",
         teaserpic: "images/projects/texture.png",
         thumbnail: "images/projects/texture-thumb.png"
     },
@@ -107,7 +107,10 @@ var projects = [
                 txt: "Git",
                 ref: ""
             }
-        ]
+        ],
+        abstract: "We present Qetch, a tool where users freely sketch patterns on a scale-less canvas to query time series data without specifying query length or amplitude. We study how humans sketch time series patterns — humans preserve visually salient perceptual features but often non-uniformly scale and locally distort a pattern — and we develop a novel matching algorithm that accounts for human sketching errors. Qetch enables the easy construction of complex and expressive queries with two key features: regular expressions over sketches and relative positioning of sketches to query multiple time-aligned series. Through user studies, we demonstrate the effectiveness of Qetch’s different interaction features. We also demonstrate the effectiveness of Qetch’s matching algorithm compared to popular algorithms on targeted, and exploratory query-by- sketch search tasks on a variety of data sets.",
+        teaserpic: "images/projects/qetch.png",
+        thumbnail: "images/projects/qetch-thumb.png"
     },
     {
         id: 11,
