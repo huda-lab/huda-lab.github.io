@@ -60,10 +60,7 @@ var projects = [
                 txt: "Git",
                 ref: ""
             }
-        ],
-        abstract: "Texture is a framework for data extraction over print documents that allows end-users to construct data extraction rules over an inferred document structure.",
-        teaserpic: "images/projects/texture.png",
-        thumbnail: "images/projects/texture-thumb.png"
+        ]
     },
     {
         id: 16,
@@ -80,7 +77,10 @@ var projects = [
                 txt: "Git",
                 ref: ""
             }
-        ]
+        ],
+        abstract: "Texture is a framework for data extraction over print documents that allows end-users to construct data extraction rules over an inferred document structure.",
+        teaserpic: "images/projects/texture.png",
+        thumbnail: "images/projects/texture-thumb.png"
     },
 
     {
