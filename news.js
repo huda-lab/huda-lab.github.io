@@ -36,9 +36,15 @@ var news =  [
         date: "April 23, 2018",
     },
     {
-        headline: "",
-        link: "",
+        headline: "Maeda Hanafi presents SEER at SIGMOD in Chicago",
+        link: "https://dl.acm.org/citation.cfm?id=3056443",
         abstract: "",
-        date: "",
+        date: "May 19, 2017",
+    },
+    {
+        headline: "Maeda Hanafi presents SEER at CHI in Denver",
+        link: "https://dl.acm.org/citation.cfm?id=3025540",
+        abstract: "",
+        date: "May 11, 2017",
     },
 ]
