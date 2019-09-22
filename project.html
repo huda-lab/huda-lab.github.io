@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+</style>
+<head>
+    <script src="members.js"></script>
+    <script src="news.js"></script>
+    <script src="projects.js"></script>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var parameters = location.search.substring(1).split("&");
+            var temp = parameters[0].split("=");
+            var id = unescape(temp[1]);
+            console.log(id);
+
+            var p = projects.find(function(d){
+                return d.id == id;
+            });
+            console.log(p);
+            $("#title").html(p.title);
+            $("#subtitle").html(p.subtitle);
+            $("#teaserpic").html(
+                '<img src="' + p.teaserpic + '"></img>'
+            );
+            $("#abstract").html(
+                '<p>' + p.abstract + '</p>'
+            );
+            var authors = '<div class="authors">' + p.authors[0];
+            $.each(p.authors, function(i,a){
+                authors += ((i > 0)? ", " + a: "");
+            });
+            authors += '</div>'
+            $("#authors").html(authors);
+
+            var links = '<p class="links">';
+            $.each(p.links, function (li, ld) {
+                links += '<a href="' + ld.ref + '">'
+                    + ld.txt + '</a>'
+                    + ((li < p.links.length - 1) ? ' | ' : ' ');
+            });
+            links += '</p>';
+            $("#links").html(links);
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class ="menu">
+        <a href = "#about" id="logo"><img height="100px" src="images/huda-logo-compact.png"></a>
+        <a href = "#joinus">Join Us</a>
+        <a href = "#teaching">Teaching</a>
+        <a href = "#projects-label">Projects</a>
+        <a href = "#members-label">Researchers</a>
+    </div>
+
+    <div style="float:left">A2-180 // <a href="https://nyuad.nyu.edu">New York University, Abu Dhabi</a> // P.O.Box 129188 // <a href="https://huda-lab.github.io">huda-lab.github.io</a>
+    </div>
+
+    <div id="teaserpic">
+
+    </div>
+
+    <h2 id="title">SYNNER</h2>
+    <h3 id="subtitle">Generating Synthetic Realistic Data</h3>
+    <div id="authors"></div>
+
+    <div id="abstract"></div>
+
+
+    <div id="links" style="margin-top:20px"></div>
+</div>
+</body>
