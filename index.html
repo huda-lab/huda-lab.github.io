@@ -68,14 +68,12 @@
         var display_news = function(){
             var o = "";
             $.each(news.sort(function(a, b){return a.date < b.date;}), function (i, d) {
-                if(i < 5) {
-                    var p = '<div class="news-item">'
-                        + '<div class="newsdate">' + d.date + '</div>'
-                        + '<div class="headline"><a href="' + d.link + '">'+ d.headline + "</a></div>"
-                        /*+ ((d["abstract"] && d.abstract != "") ? '<div class="abstract">' + d.abstract + "</div>" : "")*/
-                        + '</div>';
-                    o += p;
-                }
+                var p = '<div class="news-item">'
+                    + '<div class="newsdate">' + d.date + '</div>'
+                    + '<div class="headline"><a href="' + d.link + '">'+ d.headline + "</a></div>"
+                    /*+ ((d["abstract"] && d.abstract != "") ? '<div class="abstract">' + d.abstract + "</div>" : "")*/
+                    + '</div>';
+                o += p;
             });
             o += '</div>';
             $('#newsroll').html(o);
