@@ -245,3 +245,7 @@ img:hover {
   position: relative;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}

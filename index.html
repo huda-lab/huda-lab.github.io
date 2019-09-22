@@ -4,6 +4,7 @@
     <script src="members.js"></script>
     <script src="news.js"></script>
     <script src="projects.js"></script>
+    <script src="courses.js"></script>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -62,9 +63,11 @@
             $('#projects').html(o);
         };
 
+
         var display_news = function(){
             var o = "";
-            $.each(news.sort(function(a, b){return a.date < b.date;}), function (i, d) {
+            var dateparse =  d3.timeParse("%B %d, %Y");
+            $.each(news.sort(function(a, b){return dateparse(a.date)< dateparse(b.date);}), function (i, d) {
                 var p = '<div class="news-item">'
                     + '<div class="newsdate">' + d.date + '</div>'
                     + '<div class="headline"><a href="' + d.link + '">'+ d.headline + "</a></div>"
@@ -76,10 +79,26 @@
             $('#newsroll').html(o);
         };
 
+        var display_courses=function(){
+            var c = "";
+            $.each(courses, function(i, d) {
+                c += '<div class ="crsdiv" style="margin-top: 5px">';
+                c += '<h2 class="title">' + d.title.toLowerCase() + '</h2>';
+                c += '<p class = "links" style= "font-size: smaller">';
+                c += '<a href="' + d.syllabus + '">Syllabus | </a>';
+                $.each(d.links, function(li, ld){
+                    c += '<a href=' + ld.ref + '>' + ld.year + '</a> ' + (li < (d.links.length - 1) ? ' | ' : ' ');
+                });
+                c += '</p>'
+                c += '</div>'
+            });
+            $('#courses').html(c);
+        }
         $(document).ready(function () {
             display_members();
             display_projects();
             display_news();
+            display_courses();
         });
 
 
@@ -138,7 +157,12 @@
     <a class="anchor" id="teaching-label"></a>
     <h2>Teaching</h2>
     <div id="teaching">
-        In our efforts to increase data-literacy and engage students in
+        <p>In our efforts to increase data-literacy and engage students in human-data interaction research,
+        we have designed and taught the following courses:
+        </p>
+        <div id="courses">
+
+        </div>
     </div>
 
 
