@@ -19,6 +19,10 @@ var projects = [
                 ref: "https://www.youtube.com/watch?v=BH9tiuoayp0"
             },
             {
+                txt: "Source Code & Data",
+                ref: "https://github.com/huda-lab/synner"
+            },
+            {
                 txt: "Live Demo",
                 ref: "http://Synner.io"
             },
@@ -93,11 +97,11 @@ var projects = [
         links: [
             {
                 txt: "Paper @ CHI 2018",
-                ref: "https://github.com/dtl-nyuad/qetch/raw/resources/CHI_18_QETCH.pdf"
+                ref: "https://github.com/huda-lab/qetch/raw/resources/CHI_18_QETCH.pdf"
             },
             {
                 txt: "Source Code & Data",
-                ref: "https://github.com/dtl-nyuad/qetch"
+                ref: "https://github.com/huda-lab/qetch"
             },
             {
                 txt: "Video",
