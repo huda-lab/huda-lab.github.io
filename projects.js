@@ -3,7 +3,7 @@ var projects = [
         id: 14,
         title: "Synner",
         subtitle: "Generating Realistic Synthetic Data",
-        authors: ["Mino Mannino", "Azza Abouzied"],
+        authors: ["Miro Mannino", "Azza Abouzied"],
         members: [0, 3, 6, 7, 10, 14],
         links: [
             {
@@ -143,4 +143,19 @@ var projects = [
         teaserpic: "images/projects/seer.png",
         thumbnail: "images/projects/seer-thumb.png"
     },
+    {
+    id: 10,
+    title: "Data-Driven Decision Making in Health",
+    subtitle: "Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches",
+    authors: ["Dennis Shasha", "Azza Abouzied", "Yana Chala", "Shantanu Bhatia", "Rick Hull", "Elisa Sorrentino", "Rosalba Giugno", "Farah Shamout"],
+    links: [
+    {
+        txt: "Tech Report Available on Request",
+        ref: "mailto:azza@nyu.edu"
+    },
+    ],
+    abstract: "In this work, we propose a system for analyzing Intensive Care Unit (ICU) visits and thereby supporting the diagnosis and treatment of patients in ICU settings. The goal of the system is to infer recommendations for actions that medical staff should perform on a given patient. To achieve this, we find patients in similar conditions, and devise a number of strategies for recommending actions that should improve a patient’s medical state. These recommendations are derived from the set of similar patients and a patient’s most recent test results. Currently, our system is trained on data collected from ICU patients admitted for pneumonia. In the future, it can be extended to accommodate a variety of diseases.",
+    teaserpic: "images/projects/health-diagnosis.png",
+    thumbnail: "images/projects/health-diagnosis-thumb.png"
+}
 ];

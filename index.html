@@ -4,7 +4,7 @@
     <script src="members.js"></script>
     <script src="news.js"></script>
     <script src="projects.js"></script>
-    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -51,9 +51,9 @@
                     + '<div class="project-content">'
                     + '<div class="project-title">' + d.title + "</div>"
                     + d.subtitle
-                    + '<div class="authors">' + d.authors[0];
+                    + '<div class="authors">' + d.authors[0].substring(d.authors[0].indexOf(" "));
                 $.each(d.authors, function(i,a){
-                    p += ((i > 0)? ", " + a: "");
+                    p += ((i > 0)? ", " + a.substring(a.indexOf(" ")): "");
                 });
                 p += "</div>"
                     + '</div>'
