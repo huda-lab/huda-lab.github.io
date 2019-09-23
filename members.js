@@ -1,4 +1,5 @@
 var members =  [
+
     {
         id: 0,
         name: "Azza Abouzied",
@@ -9,14 +10,13 @@ var members =  [
         type: "PI",
     },
     {
-        id: 1,
-        name: "Maeda Hanafi",
-        title: "PhD Candidate",
-        type: "phd",
-        year: "2020",
-        image: "images/members/maeda.jpg",
-        email: "mh4047@nyu.edu",
-        website: "https://maeda.herokuapp.com/",
+        id: 3,
+        name: "Miro Mannino",
+        title: "Research Assistant",
+        image: "images/members/miro.jpg",
+        email: "miro.mannino@nyu.edu",
+        website: "https://miromannino.com/",
+        type: "RA"
     },
     {
         id: 19,
@@ -29,6 +29,16 @@ var members =  [
         website: "https://people.cs.umass.edu/~matteo/",
     },
     {
+        id: 1,
+        name: "Maeda Hanafi",
+        title: "PhD Candidate",
+        type: "phd",
+        year: "2020",
+        image: "images/members/maeda.jpg",
+        email: "mh4047@nyu.edu",
+        website: "https://maeda.herokuapp.com/",
+    },
+    {
         id: 2,
         name: "Ahmad S Chatha",
         title: "PhD Student",
@@ -37,15 +47,6 @@ var members =  [
         image: "images/members/ahmad.jpg",
         email: "asc386@nyu.edu",
         website: ""
-    },
-    {
-        id: 3,
-        name: "Miro Mannino",
-        title: "Research Assistant",
-        image: "images/members/miro.jpg",
-        email: "miro.mannino@nyu.edu",
-        website: "https://miromannino.com/",
-        type: "RA"
     },
     {
         id: 4,
