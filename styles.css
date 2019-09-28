@@ -52,7 +52,6 @@ header {
   padding-top: 0px;
   margin-left: 0px;
   margin-top: 0px;
-  margin-top: 0px;
   margin-bottom: 5px;
 }
 
@@ -79,14 +78,20 @@ div.content p {
 h2 {
   padding-top: 10px;
   padding-bottom: 5px;
+  margin-top:30px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--c-neutral-header);
+}
+
+h3{
+    font-size: 1.2rem;
 }
 
 #subtitle {
   padding-top: 2px;
   padding-bottom: 5px;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   text-transform: none;
   font-weight: normal;
 }

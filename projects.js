@@ -157,5 +157,35 @@ var projects = [
     abstract: "In this work, we propose a system for analyzing Intensive Care Unit (ICU) visits and thereby supporting the diagnosis and treatment of patients in ICU settings. The goal of the system is to infer recommendations for actions that medical staff should perform on a given patient. To achieve this, we find patients in similar conditions, and devise a number of strategies for recommending actions that should improve a patient’s medical state. These recommendations are derived from the set of similar patients and a patient’s most recent test results. Currently, our system is trained on data collected from ICU patients admitted for pneumonia. In the future, it can be extended to accommodate a variety of diseases.",
     teaserpic: "images/projects/health-diagnosis.png",
     thumbnail: "images/projects/health-diagnosis-thumb.png"
-}
+},
+    {
+        id: 9,
+        title: "Teaching Query Languages",
+        subtitle: "Using Visual Query Plans and Data to Explain Relational and Graph Queries",
+        authors: ["Yousra Hassan", "Miro Mannino", "Azza Abouzied", "Semih Salihoglu"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "We build an educational tool to help students understand relational (SQL) and graph (SPARQL) query language students. The tool creates interactive query plan visualizations and demonstrates the behavior of query operators through intermediate results. The tool integrates into Jupyter Notebook to allow educators to utilize our tool within a commonly used teaching and code-demonstration framework.",
+        teaserpic: "",
+        thumbnail: "images/projects/health-diagnosis-thumb.png"
+    },
+    {
+        id: 8,
+        title: "Epidemic Interventions",
+        subtitle: "Epidemic Policy Optimizations to Control Epidemic Outbreaks",
+        authors: ["Anh Mai","Dennis Shasha", "Azza Abouzied"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "In a stochastic partially-observable environment, an agent faces the dilemma of exploration and exploitation to make a decision in order to optimize a particular reward function. Policy optimization maps a certain state of environment to a decision that optimizes the outcome of the environment. Various attempts have been made in devising such policy using well-known techniques such as Partially Observable Markov Decision Process (POMDP) or Monte Carlo Tree Search (MCTS). Using these techniques, we hope to find an algorithm to approximate an optimal policy in a simulated epidemic scenario. We focus on influenza pandemics on the US popu- lation.",
+        teaserpic: "images/projects/epidemic-intervention.png",
+        thumbnail: "images/projects/epidemic-intervention-thumb.png"
+    }
 ];
