@@ -170,8 +170,8 @@ var projects = [
             },
         ],
         abstract: "We build an educational tool to help students understand relational (SQL) and graph (SPARQL) query language students. The tool creates interactive query plan visualizations and demonstrates the behavior of query operators through intermediate results. The tool integrates into Jupyter Notebook to allow educators to utilize our tool within a commonly used teaching and code-demonstration framework.",
-        teaserpic: "",
-        thumbnail: "images/projects/health-diagnosis-thumb.png"
+        teaserpic: "images/projects/queryplan-full.png",
+        thumbnail: "images/projects/queryplan.png"
     },
     {
         id: 8,
