@@ -1,6 +1,12 @@
 var news =  [
     {
-        headline: "Miro Mannino will be presenting Synner at UIST in New Orleans",
+        headline: "Azza Abouzied, Sihem Amer-Yahia and Zack Ives are chairing HILDA 2020",
+        link: "",
+        abstract: "",
+        date: "October 28, 2019",
+    },
+    {
+        headline: "Miro Mannino presented Synner at UIST in New Orleans",
         link: "http://uist.acm.org/uist2019/program/#Day2",
         abstract: "",
         date: "October 20, 2019",
