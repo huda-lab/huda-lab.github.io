@@ -146,7 +146,7 @@ var projects = [
     {
     id: 10,
     title: "Data-Driven Decision Making in Health",
-    subtitle: "Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches",
+    subtitle: "Suggesting the best next course of action for patients in ICUs",
     authors: ["Dennis Shasha", "Azza Abouzied", "Yana Chala", "Shantanu Bhatia", "Rick Hull", "Elisa Sorrentino", "Rosalba Giugno", "Farah Shamout"],
     links: [
     {
