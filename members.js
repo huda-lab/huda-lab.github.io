@@ -39,6 +39,16 @@ var members =  [
         website: "https://people.cs.umass.edu/~matteo/",
     },
     {
+        id: 20,
+        name: "Hashim Hayat",
+        title: "Researcher",
+        type: "RA",
+        year: "2020",
+        image: "images/members/hashim.jpg",
+        email: "hh1316@nyu.edu",
+        website: "https://hashimhayat.com",
+    },
+    {
         id: 1,
         name: "Maeda Hanafi",
         title: "PhD Candidate",
