@@ -12,11 +12,21 @@ var members =  [
     {
         id: 3,
         name: "Miro Mannino",
-        title: "Research Assistant",
+        title: "Research Associate",
         image: "images/members/miro.jpg",
         email: "miro.mannino@nyu.edu",
         website: "https://miromannino.com/",
         type: "RA"
+    },
+    {
+        id: 20,
+        name: "Hashim Hayat",
+        title: "Research Assistant",
+        type: "RA",
+        year: "2020",
+        image: "images/members/hashim.jpg",
+        email: "hh1316@nyu.edu",
+        website: "https://hashimhayat.com",
     },
     {
         id: 2,
@@ -37,16 +47,6 @@ var members =  [
         image: "images/members/matteo.png",
         email: "matteo@cs.umass.edu",
         website: "https://people.cs.umass.edu/~matteo/",
-    },
-    {
-        id: 20,
-        name: "Hashim Hayat",
-        title: "Researcher",
-        type: "RA",
-        year: "2020",
-        image: "images/members/hashim.jpg",
-        email: "hh1316@nyu.edu",
-        website: "https://hashimhayat.com",
     },
     {
         id: 1,
