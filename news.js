@@ -1,5 +1,17 @@
 var news =  [
     {
+        headline: "Our work on Realistic Data Generation with Synner was accepted for a Demo to SIGMOD 2020",
+        link: "",
+        abstract: "",
+        date: "February 20, 2020",
+    },
+    {
+        headline: "Our work on Stochastic Package Queries in Probabilistic Databases was accepted to SIGMOD 2020",
+        link: "",
+        abstract: "",
+        date: "January 20, 2020",
+    },
+    {
         headline: "Azza Abouzied, Sihem Amer-Yahia and Zack Ives are chairing HILDA 2020",
         link: "",
         abstract: "",
