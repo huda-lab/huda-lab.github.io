@@ -1,5 +1,11 @@
 var news =  [
     {
+        headline: "Maeda Hanafi has successfully defended her thesis on March 23, 2020. Congrats Dr. Hanafi!",
+        link: "",
+        abstract: "",
+        date: "March 24, 2020",
+    },
+    {
         headline: "Our work on Realistic Data Generation with Synner was accepted for a Demo to SIGMOD 2020",
         link: "",
         abstract: "",
