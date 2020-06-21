@@ -1,5 +1,24 @@
 var news =  [
     {
+        headline: "Azza Abouzied, Sihem Amer-Yahia (Univ. Grenoble Alpes) & Zachary Ives (UPenn) " +
+            "are organizing HILDA 2020 @ SIGMOD 2020",
+        link: "http://hilda.io",
+        abstract: "",
+        date: "June 19, 2020",
+    },
+    {
+        headline: "Miro Mannino demoed Synner at SIGMOD 2020",
+        link: "https://www.youtube.com/watch?v=6W99fj9bB0U",
+        abstract: "",
+        date: "June 18, 2020",
+    },
+    {
+        headline: "Matteo Brucato presented our on work on Stochastic Package Queries @SIGMOD 2020",
+        link: "https://www.youtube.com/watch?v=UrEOEplK06I",
+        abstract: "",
+        date: "June 17, 2020",
+    },
+    {
         headline: "Maeda Hanafi has successfully defended her PhD thesis. Congrats Dr. Hanafi!",
         link: "",
         abstract: "",

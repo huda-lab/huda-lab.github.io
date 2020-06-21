@@ -2,6 +2,7 @@ var projects = [
     {
         id: 14,
         title: "Synner",
+        status: "active",
         subtitle: "Generating Realistic Synthetic Data",
         authors: ["Miro Mannino", "Azza Abouzied"],
         members: [0, 3, 6, 7, 10, 14],
@@ -37,6 +38,7 @@ var projects = [
     },
     {
         id: 13,
+        status: "active",
         title: "Scalable Package Queries",
         subtitle: "Scaling package queries over probabilistic databases",
         authors: ["Matteo Brucato", "Peter Haas", "Alexandra Meliou", "Azza Abouzied"],
@@ -71,6 +73,7 @@ var projects = [
     },
     {
         id: 16,
+        status: "archive",
         title: "Texture",
         subtitle: "A Collaborative Framework for Structure Identification over Print Documents",
         authors: ["Maeda Hanafi", "Miro Mannino", "Azza Abouzied"],
@@ -92,6 +95,7 @@ var projects = [
 
     {
         id: 12,
+        status: "archive",
         title: "Qetch",
         subtitle: "Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches",
         authors: ["Miro Mannino", "Azza Abouzied"],
@@ -121,6 +125,7 @@ var projects = [
     },
     {
         id: 11,
+        status: "archive",
         title: "SEER",
         subtitle: "Auto-Generating Information Extraction Rules from User-Specified Examples.",
         authors: ["Maeda Hanafi", "Azza Abouzied", "Laura Chiticariu", "Yunyao Li"],
@@ -158,26 +163,27 @@ var projects = [
     teaserpic: "images/projects/health-diagnosis.png",
     thumbnail: "images/projects/health-diagnosis-thumb.png"
 },
-    {
-        id: 9,
-        title: "Teaching Query Languages",
-        subtitle: "Using Visual Query Plans and Data to Explain Relational and Graph Queries",
-        authors: ["Yousra Hassan", "Miro Mannino", "Azza Abouzied", "Semih Salihoglu"],
-        links: [
-            {
-                txt: "Tech Report Available on Request",
-                ref: "mailto:azza@nyu.edu"
-            },
-        ],
-        abstract: "We build an educational tool to help students understand relational (SQL) and graph (SPARQL) query language students. The tool creates interactive query plan visualizations and demonstrates the behavior of query operators through intermediate results. The tool integrates into Jupyter Notebook to allow educators to utilize our tool within a commonly used teaching and code-demonstration framework.",
-        teaserpic: "images/projects/queryplan-full.png",
-        thumbnail: "images/projects/queryplan.png"
-    },
+    // {
+    //     id: 9,
+    //     title: "Teaching Query Languages",
+    //     subtitle: "Using Visual Query Plans and Data to Explain Relational and Graph Queries",
+    //     authors: ["Yousra Hassan", "Miro Mannino", "Azza Abouzied", "Semih Salihoglu"],
+    //     links: [
+    //         {
+    //             txt: "Tech Report Available on Request",
+    //             ref: "mailto:azza@nyu.edu"
+    //         },
+    //     ],
+    //     abstract: "We build an educational tool to help students understand relational (SQL) and graph (SPARQL) query language students. The tool creates interactive query plan visualizations and demonstrates the behavior of query operators through intermediate results. The tool integrates into Jupyter Notebook to allow educators to utilize our tool within a commonly used teaching and code-demonstration framework.",
+    //     teaserpic: "images/projects/queryplan-full.png",
+    //     thumbnail: "images/projects/queryplan.png"
+    // },
     {
         id: 8,
+        status: "active",
         title: "Epidemic Interventions",
-        subtitle: "Epidemic Policy Optimizations to Control Epidemic Outbreaks",
-        authors: ["Anh Mai","Dennis Shasha", "Azza Abouzied"],
+        subtitle: "Policy Optimization to Control Epidemic Outbreaks",
+        authors: ["Anh Mai", "Zain Tariq", "Dennis Shasha", "Azza Abouzied"],
         links: [
             {
                 txt: "Tech Report Available on Request",
@@ -187,5 +193,70 @@ var projects = [
         abstract: "In a stochastic partially-observable environment, an agent faces the dilemma of exploration and exploitation to make a decision in order to optimize a particular reward function. Policy optimization maps a certain state of environment to a decision that optimizes the outcome of the environment. Various attempts have been made in devising such policy using well-known techniques such as Partially Observable Markov Decision Process (POMDP) or Monte Carlo Tree Search (MCTS). Using these techniques, we hope to find an algorithm to approximate an optimal policy in a simulated epidemic scenario. We focus on influenza pandemics on the US popu- lation.",
         teaserpic: "images/projects/epidemic-intervention.png",
         thumbnail: "images/projects/epidemic-intervention-thumb.png"
-    }
+    },
+    {
+        id: 21,
+        status: "active",
+        title: "Hill and Dale",
+        subtitle: "Streaming queries with AQuery",
+        authors: ["Ahmad Chatha", "Kostas Zoumbatianos", "Dennis Shasha", "Azza Abouzied"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "",
+        teaserpic: "",
+        thumbnail: ""
+    },
+    {
+        id: 23,
+        status: "active",
+        title: "Validating Generative Models",
+        subtitle: "Evaluating the realism of synthetic data sets generated by GANs and language models",
+        authors: ["Miro Mannino", "Ofer Mendelevitch", "Azza Abouzied"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "",
+        teaserpic: "",
+        thumbnail: ""
+    },
+    {
+        id: 9,
+        status: "active",
+        title: "Impact3D",
+        subtitle: "Visualizing the impact of Charitable Donations with Augmented Reality",
+        authors: ["Lauren McMillen", "Azza Abouzied"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "",
+        teaserpic: "",
+        thumbnail: ""
+    },
+    {
+        id: 17,
+        status: "active",
+        title: "CREST",
+        subtitle: "A Collaborative Real Estate Search Tool",
+        authors: ["Junior Garcia", "Azza Abouzied"],
+        links: [
+            {
+                txt: "Tech Report Available on Request",
+                ref: "mailto:azza@nyu.edu"
+            },
+        ],
+        abstract: "",
+        teaserpic: "",
+        thumbnail: ""
+    },
+
 ];

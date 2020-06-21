@@ -28,13 +28,17 @@
         var display_members = function(){
             var o = '<div class = "members">';
             $.each(members, function (i, d) {
-                if(d.type != "undergrad" || d.year > 2019)
+                if(d.type == "RA" || d.type == "PI" || d.year > 2020)
                     o += toImage(d);
             });
             o += '</div>';
             o += '<div> Past Students </div><div><ul>';
             $.each(members, function (i, d) {
-                if(d.type == "undergrad" && d.year <= 2019)
+                if(d.type == "phd" && d.year <= 2020)
+                    o += '<li><strong>Phd Graduate:</strong> Dr. ' + d.name + '</li>';
+            });
+            $.each(members, function (i, d) {
+                if(d.type == "undergrad" && d.year <= 2020)
                     o += '<li>' + d.name + '</li>';
             });
             o += '</ul></div>';
@@ -44,23 +48,47 @@
         var display_projects = function(){
             var o = '<div class = "projects">';
             $.each(projects, function (i, d) {
-                var p = '<div class="project">'
-                    + '<div class="project-image" style="border-color: whitesmoke">'
-                    + '<a href="project.html?project-id=' + d.id + '"><img class="project-img" src="' + d.thumbnail + '"></a>'
-                    + '</div>'
-                    + '<div class="project-content">'
-                    + '<div class="project-title">' + d.title + "</div>"
-                    + d.subtitle
-                    + '<div class="authors">' + d.authors[0].substring(d.authors[0].indexOf(" "));
-                $.each(d.authors, function(i,a){
-                    p += ((i > 0)? ", " + a.substring(a.indexOf(" ")): "");
-                });
-                p += "</div>"
-                    + '</div>'
-                    + '</div>';
-                o += p;
+                if(d.status == "active") {
+                    var p = '<div class="project">'
+                        + '<div class="project-image" style="border-color: white">'
+                        + '<a href="project.html?project-id=' + d.id + '"><img class="project-img" src="' + d.thumbnail + '"></a>'
+                        + '</div>'
+                        + '<div class="project-content">'
+                        + '<div class="project-title">' + d.title + "</div>"
+                        + d.subtitle
+                        + '<div class="authors">' + d.authors[0].substring(d.authors[0].indexOf(" "));
+                    $.each(d.authors, function (i, a) {
+                        p += ((i > 0) ? ", " + a.substring(a.indexOf(" ")) : "");
+                    });
+                    p += "</div>"
+                        + '</div>'
+                        + '</div>';
+                    o += p;
+                }
             });
             o += '</div>';
+            o += '<dIV class = "projects"> <h3>ARCHIVE</h3> <BR>';
+            $.each(projects, function (i, d) {
+                if(d.status == "archive") {
+                    var p = '<div class="project">'
+                        + '<div class="project-image" style="border-color: whitesmoke">'
+                        + '<a href="project.html?project-id=' + d.id + '">'
+                        +  (d.thumbnail != "" ? '<img class="project-img" src="' + d.thumbnail + '">' : '') + '</a>'
+                        + '</div>'
+                        + '<div class="project-content">'
+                        + '<div class="project-title">' + d.title + "</div>"
+                        + d.subtitle
+                        + '<div class="authors">' + d.authors[0].substring(d.authors[0].indexOf(" "));
+                    $.each(d.authors, function (i, a) {
+                        p += ((i > 0) ? ", " + a.substring(a.indexOf(" ")) : "");
+                    });
+                    p += "</div>"
+                        + '</div>'
+                        + '</div>';
+                    o += p;
+                }
+            });
+            o += '</div>'
             $('#projects').html(o);
         };
 

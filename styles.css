@@ -205,7 +205,7 @@ div.member {
 }
 
 .member-img {
-  width: 200px;
+  width: 160px;
   filter: grayscale(100%);
   opacity: 0.9;
 }
