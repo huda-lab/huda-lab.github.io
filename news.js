@@ -13,7 +13,7 @@ var news =  [
         date: "September 3, 2020",
     },
     {
-        headline: "Azza Abouzied discussed the future of Human-in-the-loop tools for Data Science @ DaSH 2020",
+        headline: "Azza Abouzied discussed the future of Human-in-the-loop tools for Data Science @ DaSH 2020's expert panel",
         link: "",
         abstract: "",
         date: "August 24, 2020",
