@@ -25,12 +25,6 @@ var news =  [
         date: "August 24, 2020",
     },
     {
-        headline: "Matteo Brucato and Miro Mannino demoed sPaQL tools @ VLDB 2020 and won the best demo award",
-        link: "https://youtu.be/kGX-c6EmFGM",
-        abstract: "",
-        date: "September 3, 2020",
-    },
-    {
         headline: "Azza Abouzied, Sihem Amer-Yahia (Univ. Grenoble Alpes) & Zachary Ives (UPenn) " +
             "are organizing HILDA 2020 @ SIGMOD 2020",
         link: "http://hilda.io",
