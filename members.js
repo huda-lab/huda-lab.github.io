@@ -48,16 +48,16 @@ var members =  [
     //     email: "hh1316@nyu.edu",
     //     website: "https://hashimhayat.com",
     // },
-    {
-        id: 2,
-        name: "Ahmad S Chatha",
-        title: "PhD Student",
-        type: "phd",
-        year: "2024",
-        image: "images/members/ahmad.jpg",
-        email: "asc386@nyu.edu",
-        website: ""
-    },
+    // {
+    //     id: 2,
+    //     name: "Ahmad S Chatha",
+    //     title: "PhD Student",
+    //     type: "phd",
+    //     year: "2024",
+    //     image: "images/members/ahmad.jpg",
+    //     email: "asc386@nyu.edu",
+    //     website: ""
+    // },
     {
         id: 19,
         name: "Matteo Brucato",
@@ -78,7 +78,6 @@ var members =  [
         email: "mh4047@nyu.edu",
         website: "https://maeda.herokuapp.com/",
     },
-
     {
       id: 19,
       name: "Junior Garcia",

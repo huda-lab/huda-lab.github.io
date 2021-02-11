@@ -1,5 +1,16 @@
 var news =  [
     {
+        headline: "Azza Abouzied has been promoted to Associate Professor of Computer Science",
+        abstract: "",
+        date: "January 31, 2021"
+    },
+    {
+        headline: "Christina Popper (CSP-Lab) and Azza Abouzied have been awarded a grant for " +
+            "assessing the threat levels of misinformation campaigns",
+        abstract: "",
+        date: "January 30, 2021"
+    },
+    {
         headline: "Azza Abouzied will give a keynote talk at the Future Data " +
             "conference on Building Systems  for Decision-Making in Uncertain Environments",
         link: "https://www.futuredata.org",
