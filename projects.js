@@ -181,7 +181,7 @@ var projects = [
     {
         id: 8,
         status: "active",
-        title: "Epidemic Interventions",
+        title: "EpiPolicy",
         subtitle: "Policy Optimization to Control Epidemic Outbreaks",
         authors: ["Miro Mannino", "Anh Mai", "Zain Tariq", "Dennis Shasha", "Azza Abouzied"],
         links: [
