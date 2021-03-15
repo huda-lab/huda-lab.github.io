@@ -190,7 +190,7 @@ var projects = [
                 ref: "mailto:azza@nyu.edu"
             },
         ],
-        abstract: "In a stochastic partially-observable environment, an agent faces the dilemma of exploration and exploitation to make a decision in order to optimize a particular reward function. Policy optimization maps a certain state of environment to a decision that optimizes the outcome of the environment. Various attempts have been made in devising such policy using well-known techniques such as Partially Observable Markov Decision Process (POMDP) or Monte Carlo Tree Search (MCTS). Using these techniques, we hope to find an algorithm to approximate an optimal policy in a simulated epidemic scenario. We focus on influenza pandemics on the US popu- lation.",
+        abstract: "EpiPolicy is a population-based epidemic simulator and policy aid that allows users to customize its compartmental model to capture different epidemic scenarios for epidemics like COVID-19. Its user interface makes it easy to define various interventions such as social distancing, school closure, vaccination, and disease-specific interventions. EpiPolicy aids policy makers by simulating and constructing locale-specific intervention schedules that reduce disease burden, and minimize social and economic costs.",
         teaserpic: "images/projects/epidemic-intervention.png",
         thumbnail: "images/projects/epidemic-intervention-thumb.png"
     },
