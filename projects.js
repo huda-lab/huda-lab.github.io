@@ -13,11 +13,11 @@ var projects = [
             },
             {
                 txt: "30s Video",
-                ref: "https://www.youtube.com/watch?v=ez2Tge5Bf2M"
+                ref: "https://www.youtube.com/watch?v=dS6dS5JdNr8"
             },
             {
                 txt: "Video",
-                ref: "https://www.youtube.com/watch?v=BH9tiuoayp0"
+                ref: "https://www.youtube.com/watch?v=5LuHyJsKY3I"
             },
             {
                 txt: "Source Code & Data",
@@ -112,7 +112,7 @@ var projects = [
             },
             {
                 txt: "Video",
-                ref: "https://youtu.be/4YQTuUuIFbI"
+                ref: "https://youtu.be/T11OS4qO1c4"
             },
             {
                 txt: "Git",
