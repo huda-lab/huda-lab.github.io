@@ -34,11 +34,11 @@
             o += '</div>';
             o += '<div> Past Students </div><div><ul>';
             $.each(members, function (i, d) {
-                if(d.type == "phd" && d.year <= 2020)
+                if(d.type == "phd" && d.year <= 2021)
                     o += '<li><strong>Phd Graduate:</strong> Dr. ' + d.name + '</li>';
             });
             $.each(members, function (i, d) {
-                if(d.type == "undergrad" && d.year <= 2020)
+                if(d.type == "undergrad" && d.year <= 2021)
                     o += '<li>' + d.name + '</li>';
             });
             o += '</ul></div>';

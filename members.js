@@ -12,7 +12,7 @@ var members =  [
     {
         id: 3,
         name: "Miro Mannino",
-        title: "Research Associate",
+        title: "Research Engineer",
         image: "images/members/miro.jpg",
         email: "miro.mannino@nyu.edu",
         website: "https://miromannino.com/",
@@ -81,11 +81,12 @@ var members =  [
     {
       id: 19,
       name: "Junior Garcia",
-      title: "Student Researcher",
+      title: "Research Assistant",
       image: "images/members/junior.jpg",
       email: "jfg388@nyu.edu",
+      website: "",
       year: 2021,
-      type: "undergrad",
+      type: "RA",
     },
     {
         id: 20,
@@ -93,7 +94,7 @@ var members =  [
         title: "Student Researcher",
         image: "images/members/lauren.jpg",
         email: "lm3623@nyu.edu",
-        year: 2021,
+        year: 2022,
         type: "undergrad",
     },
     {
@@ -103,7 +104,7 @@ var members =  [
         image: "images/members/yousra.jpg",
         email: "yeh218@nyu.edu",
         website: "",
-        year: 2020,
+        year: 2021,
         type : "undergrad"
     },
     {
@@ -113,7 +114,7 @@ var members =  [
         image: "images/members/jia.png",
         email: "bj798@nyu.edu",
         website: "",
-        year: 2021,
+        year: 2020,
         type : "undergrad"
     },
     {

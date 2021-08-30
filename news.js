@@ -1,5 +1,17 @@
 var news =  [
     {
+        headline: "Our EpiPolicy work has been accepted to UIST 2021!",
+        abstract: "",
+        link: "https://huda-lab.github.io/project.html?project-id=8",
+        date: "August 15, 2021"
+    },
+    {
+        headline: "CACM special Arabia edition highlights the work of HuDa Lab",
+        abstract: "",
+        link: "https://cacm.acm.org/magazines/2021/4/251358-database-systems-research-in-the-arab-world/fulltext",
+        date: "April 1, 2021"
+    },
+    {
         headline: "Azza Abouzied has been promoted to Associate Professor of Computer Science",
         abstract: "",
         date: "January 31, 2021"
