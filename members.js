@@ -104,7 +104,7 @@ var members =  [
         image: "images/members/yousra.jpg",
         email: "yeh218@nyu.edu",
         website: "",
-        year: 2021,
+        year: 2020,
         type : "undergrad"
     },
     {
@@ -114,7 +114,7 @@ var members =  [
         image: "images/members/jia.png",
         email: "bj798@nyu.edu",
         website: "",
-        year: 2020,
+        year: 2021,
         type : "undergrad"
     },
     {
