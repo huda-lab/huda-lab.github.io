@@ -267,8 +267,8 @@ var projects = [
             },
         ],
         abstract: "",
-        teaserpic: "",
-        thumbnail: ""
+        teaserpic: "images/projects/crest.jpg",
+        thumbnail: "images/projects/crest-thumb.jpg"
     },
 
 ];
