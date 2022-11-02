@@ -140,6 +140,7 @@ var members = [
     title: "Student Researcher",
     image: "images/members/phillip.jpg",
     email: "pw1287@nyu.edu",
+    website: "https://phillipw.info/",
     year: 2022,
     type: "undergrad",
   },
