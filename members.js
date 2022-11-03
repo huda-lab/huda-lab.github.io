@@ -121,13 +121,14 @@ var members = [
     year: 2022,
     type: "undergrad",
   },
-  // {
-  //   name: "Cole Beasley",
-  //   title: "Student Researcher",
-  //   email: "crb596@nyu.edu",
-  //   year: 2022,
-  //   type: "undergrad",
-  // },
+  {
+    name: "Cole Robert Beasley",
+    title: "Student Researcher",
+    image: "images/members/cole-robert.jpg",
+    email: "crb596@nyu.edu",
+    year: 2022,
+    type: "undergrad",
+  },
   // {
   //   name: "Muhammad Anas",
   //   title: "Student Researcher",
@@ -144,13 +145,14 @@ var members = [
     year: 2022,
     type: "undergrad",
   },
-  // {
-  //   name: "Liam Richards",
-  //   title: "Student Researcher",
-  //   email: "lrm444@nyu.edu",
-  //   year: 2022,
-  //   type: "undergrad",
-  // },
+  {
+    name: "Liam Richards",
+    title: "Student Researcher",
+    image: "images/members/liam.jpg",
+    email: "lrm444@nyu.edu",
+    year: 2022,
+    type: "undergrad",
+  },
   {
     name: "Jacqueline Abalo",
     type: "undergrad",
