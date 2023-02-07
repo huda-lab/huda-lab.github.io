@@ -220,4 +220,12 @@ var members = [
     year_to: 2019,
     title: "Undergraduate Researcher",
   },
+  {
+    name: "Muhammad Anas",
+    type: "undergrad",
+    year_from: 2022,
+    title: "Student Researcher",
+    image: "images/members/muhammad-anas.jpg",
+    type: "undergrad",
+  }
 ];
