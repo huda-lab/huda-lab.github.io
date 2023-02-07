@@ -28,17 +28,17 @@
         var display_members = function(){
             var o = '<div class = "members">';
             $.each(members, function (i, d) {
-                if(d.type == "RA" || d.type == "PI" || d.year > 2021)
+                if(d.type == "RA" || d.type == "PI" || (!d.year_to || d.year_to >= 2023))
                     o += toImage(d);
             });
             o += '</div>';
             o += '<div> Past Students </div><div><ul>';
             $.each(members, function (i, d) {
-                if(d.type == "phd" && d.year <= 2021)
+                if(d.type == "phd" && (d.year_to && d.year_to < 2023))
                     o += '<li><strong>Phd Graduate:</strong> Dr. ' + d.name + '</li>';
             });
             $.each(members, function (i, d) {
-                if(d.type == "undergrad" && d.year <= 2021)
+                if((d.year_to && d.year_to < 2023) && d.type != "phd")
                     o += '<li>' + d.name + '</li>';
             });
             o += '</ul></div>';
