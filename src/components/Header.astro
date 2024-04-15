@@ -1,0 +1,54 @@
+<header>
+  <div id="header-content">
+    <a href="/" id="logo">
+      <img
+        src="images/huda-logo-compact.png"
+        alt="Huda Data Interaction Lab - Logo"
+      />
+      <h1>Human Data Interaction Lab</h1>
+    </a>
+    <nav>
+      <a href="#members-label">Researchers</a>
+      <a href="#projects-label">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#joinus" class="">Join Us</a>
+    </nav>
+  </div>
+</header>
+
+<style lang="scss">
+  header {
+    width: 100%;
+    margin-top: 1rem;
+
+    #header-content {
+      padding: var(--section-padding);
+      max-width: var(--s-content-width);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      gap: 1rem;
+      margin: auto;
+
+      #logo {
+        flex-grow: 1;
+        h1 {
+          display: none;
+        }
+        img {
+          height: 5rem;
+        }
+      }
+
+      nav {
+        text-transform: uppercase;
+        justify-content: end;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+</style>

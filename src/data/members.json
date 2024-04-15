@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Azza Abouzied",
+    "title": "Principal Investigator",
+    "website": "http://azza.azurewebsites.net/",
+    "image": "images/members/azza.jpg",
+    "email": "azza@nyu.edu",
+    "type": "PI"
+  },
+  {
+    "name": "Miro Mannino",
+    "title": "Research Engineer",
+    "image": "images/members/miro.jpg",
+    "email": "miro.mannino@nyu.edu",
+    "website": "https://miromannino.com/",
+    "type": "RA"
+  },
+  {
+    "name": "Anh Mai",
+    "title": "PhD Candidate",
+    "image": "images/members/anh.jpg",
+    "email": "alm818@nyu.edu",
+    "website": "https://ae.linkedin.com/in/mai-l%C3%AA-xu%C3%A2n-%C3%A1nh-5386b0130",
+    "type": "phd"
+  },
+  {
+    "name": "Zain Tariq",
+    "title": "Research Assistant",
+    "image": "images/members/zain.jpg",
+    "email": "zain.tariq@nyu.edu",
+    "website": "https://www.zaintq.com/",
+    "year_to": 2020,
+    "type": "Past RA"
+  },
+  {
+    "name": "Matteo Brucato",
+    "title": "PhD Candidate - UMass",
+    "year_to": 2021,
+    "type": "phd",
+    "image": "images/members/matteo.png",
+    "email": "matteo@cs.umass.edu",
+    "website": "https://people.cs.umass.edu/~matteo/"
+  },
+  {
+    "name": "Maeda Hanafi",
+    "title": "PhD Candidate",
+    "type": "phd",
+    "year_to": 2020,
+    "image": "images/members/maeda.jpg",
+    "email": "mh4047@nyu.edu",
+    "website": "https://maeda.herokuapp.com/"
+  },
+  {
+    "name": "Junior Garcia",
+    "title": "PhD Candidate",
+    "type": "phd",
+    "image": "images/members/junior.jpg",
+    "email": "jfg388@nyu.edu",
+    "website": "https://www.juniorfranciscogarcia.com"
+  },
+  {
+    "name": "Cole Robert Beasley",
+    "title": "Research Assistant",
+    "image": "images/members/cole-robert.jpg",
+    "email": "crb596@nyu.edu",
+    "website": "https://www.linkedin.com/in/cole-beasley",
+    "year_from": 2022,
+    "type": "RA"
+  },
+  {
+    "name": "Lauren McMillen",
+    "title": "Student Researcher",
+    "image": "images/members/lauren.jpg",
+    "email": "lm3623@nyu.edu",
+    "year_from": 2022,
+    "year_to": 2022,
+    "type": "undergrad"
+  },
+  {
+    "name": "Yousra El Hassan",
+    "title": "Student Researcher",
+    "image": "images/members/yousra.jpg",
+    "email": "yeh218@nyu.edu",
+    "website": "https://yousraelhassan.wordpress.com/",
+    "year_from": 2020,
+    "year_to": 2020,
+    "type": "undergrad"
+  },
+  {
+    "name": "Bokang Jia",
+    "title": "Student Researcher",
+    "image": "images/members/jia.png",
+    "email": "bj798@nyu.edu",
+    "website": "",
+    "year_to": 2021,
+    "type": "undergrad"
+  },
+  {
+    "name": "Min Kyu Jung",
+    "title": "Student Researcher",
+    "image": "images/members/minkyu.jpg",
+    "email": "mkj280@nyu.edu",
+    "website": "",
+    "year_to": 2020,
+    "type": "undergrad"
+  },
+  {
+    "name": "Reem Hazim",
+    "title": "Student Researcher",
+    "image": "images/members/reem.jpg",
+    "email": "rh3015@nyu.edu",
+    "website": "https://reemhazim.com/home.html",
+    "year_from": 2022,
+    "type": "undergrad"
+  },
+  {
+    "name": "Phillip Wang",
+    "title": "Student Researcher",
+    "image": "images/members/phillip.jpg",
+    "email": "pw1287@nyu.edu",
+    "website": "https://phillipw.info/",
+    "year_from": 2022,
+    "type": "undergrad"
+  },
+  {
+    "name": "Liam Richards",
+    "title": "Student Researcher",
+    "image": "images/members/liam.jpg",
+    "email": "lrm444@nyu.edu",
+    "year_from": 2022,
+    "type": "undergrad"
+  },
+  {
+    "name": "Jacqueline Abalo",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Christian Munoz",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Abhimanyu Vasishth",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Mark Surnin",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Andrew Callendar",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Jaehurn Nam",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Yuhui Dai",
+    "type": "undergrad",
+    "year_to": 2017,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Moiri Gambioni",
+    "type": "undergrad",
+    "year_to": 2018,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Yana Chala",
+    "type": "undergrad",
+    "year_to": 2019,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Shantanu Bhatia",
+    "type": "undergrad",
+    "year_to": 2019,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Emil Goldsmith Olesen",
+    "type": "undergrad",
+    "year_to": 2019,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Muhammad Anas",
+    "type": "undergrad",
+    "year_from": 2022,
+    "title": "Student Researcher",
+    "image": "images/members/muhammad-anas.jpg"
+  }
+]

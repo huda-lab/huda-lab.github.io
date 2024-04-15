@@ -1,0 +1,47 @@
+---
+import ProjectListEntry from "./ProjectListEntry.astro";
+import { getCollection, getEntryBySlug } from "astro:content";
+const projects = await getCollection("projects");
+---
+
+<div id="projects-list">
+  <a class="anchor" id="projects-label"></a>
+  <h2>Projects</h2>
+  <div class="projects">
+    {
+      projects
+        .filter(
+          (p) => p.data.status !== "archive" && p.data.status !== "hidden"
+        )
+        .map((p) => <ProjectListEntry project={p} />)
+    }
+    {
+      projects
+        .filter((p) => p.data.status == "archive" && p.data.status !== "hidden")
+        .map((p) => <ProjectListEntry project={p} />)
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  #projects-list {
+    max-width: var(--s-content-width);
+    padding: var(--section-padding);
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      @media (min-width: 25rem) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @media (min-width: 40rem) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @media (min-width: 50rem) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+  }
+</style>

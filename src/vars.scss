@@ -1,0 +1,19 @@
+$color_link: #5272ac;
+
+:root {
+  --c-link: #{$color_link};
+  --c-link-hover: #{darken($color_link, 10%)};
+  --c-bright-header: #aa3d01;
+  --c-neutral-header: #ed7d30;
+  --c-dark-header: #2b5865;
+  --c-contrast-header: teal;
+  --c-text: #222222; 
+  --c-background: white;
+  --c-background-accent: #fff8f5;
+
+  --s-content-width: 60rem;
+  --mobile-content-width: 43rem;
+
+
+  --section-padding: 0rem 1rem 2rem 1rem;
+}
