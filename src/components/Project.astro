@@ -1,43 +1,52 @@
 ---
-const { project } = Astro.props;
+const { data } = Astro.props;
 ---
 
 <div class="project">
-  <figure class={"project-image " + project.data.status}>
-    <img src={project.data.thumbnail} alt="Project Thumbnail" />
-  </figure>
+  {
+    data.thumbnail && (
+      <figure class={"project-image " + data.status}>
+        <img src={data.thumbnail} alt="Project Thumbnail" />
+      </figure>
+    )
+  }
 
   <div class="project-content">
-    <div class="project-title">{project.data.title}</div>
-    <div class="project-subtitle">{project.data.subtitle}</div>
-    <div class="project-authors">{project.data.authors.join(", ")}</div>
+    <div class="project-title">{data.title}</div>
+    <div class="project-subtitle">{data.subtitle}</div>
+    <div class="project-authors">{data.authors.join(", ")}</div>
   </div>
 </div>
 
 <style lang="scss">
   .project {
+    display: flex;
+    flex-direction: row;
     border-radius: 0.2rem;
-    border: 1px solid var(--c-background-accent);
     overflow: hidden;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    flex-direction: column;
 
     figure {
       margin: 0;
       padding: 0;
-      width: 100%;
-      background-color: var(--c-background);
       text-align: center;
 
       img {
         width: 100%;
+        object-fit: cover;
+        max-height: 10rem;
+        min-height: 100%;;
       }
+    }
+
+    @media (max-width: 35rem) {
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 
   .project-content {
+    flex-grow: 1;
     padding: 0.5rem;
 
     .project-title {

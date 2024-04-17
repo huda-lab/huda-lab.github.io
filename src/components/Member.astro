@@ -1,31 +1,27 @@
 ---
-const { member } = Astro.props;
+const { member, photo } = Astro.props;
 ---
 
-<div class="member">
+<a class="member" href={member.website}>
   <figure>
-    <img
-      src={member.image || "/images/members/placeholder.png"}
-      alt={member.name + " photo"}
-    />
-    <figcaption>
-      {
-        member.website ? (
-          <a href={member.website}>{member.name}</a>
-        ) : (
-          member.name
-        )
-      }
+    {
+      photo && (
+        <img
+          src={member.image || "/images/members/placeholder.png"}
+          alt={member.name + " photo"}
+        />
+      )
+    }<figcaption>
+      {member.name}
       <br />
       <small>{member.title}</small>
     </figcaption>
   </figure>
-</div>
+</a>
 
 <style lang="scss">
   .member {
     border-radius: 0.2rem;
-    border: 1px solid var(--c-background-accent);
     overflow: hidden;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 
@@ -38,20 +34,22 @@ const { member } = Astro.props;
       figcaption {
         background: rgba(255, 255, 255, 0.9);
         padding: 0.5rem 0.5rem;
-        white-space: nowrap;
-        text-align: right;
-        direction: rtl;
+        small {
+          color: var(--c-text);
+        }
       }
 
       img {
-        filter: grayscale(100%);
         opacity: 0.9;
         object-fit: cover;
         width: 100%;
+        display: block;
+      }
+    }
 
-        &:hover {
-          filter: grayscale(0%);
-        }
+    &[href]:hover {
+      img {
+        filter: opacity(80%);
       }
     }
   }

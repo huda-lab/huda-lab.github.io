@@ -4,39 +4,39 @@ import members from "../data/members.json";
 let current_year = new Date().getFullYear();
 ---
 
-<div id="members-list">
+<div id="members">
   <a class="anchor" id="members-label"></a>
 
   <h2>Researchers</h2>
-  <div id="members">
+  <div class="members-list">
     {
       members
         .filter(
           (d) => d.type == "PI" || !d.year_to || d.year_to >= current_year
         )
-        .map((d) => <Member member={d} />)
+        .map((d) => <Member member={d} photo={true} />)
     }
   </div>
 
   <br/>
 
   <h3>Past Students & Researchers</h3>
-  <div id="members" class="members-past">
+  <div class="members-list members-past">
     {
       members
         .filter((d) => d.year_to && d.year_to < current_year)
         .sort((a, b) => (a.type == "phd" && b.type != "phd" ? -1 : 1))
-        .map((d) => <Member member={d} />)
+        .map((d) => <Member member={d} photo={false} />)
     }
   </div>
 </div>
 
 <style lang="scss">
-  #members-list {
+  #members {
     max-width: var(--s-content-width);
     padding: var(--section-padding);
 
-    #members {
+    .members-list {
       display: grid;
       grid-template-columns: 1fr;
       flex-wrap: wrap;
@@ -59,25 +59,22 @@ let current_year = new Date().getFullYear();
       }
 
       &.members-past {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        font-size: 50%;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        font-size: 80%;
 
-        @media (min-width: 25rem) {
+        @media (min-width: 20rem) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        @media (min-width: 35rem) {
           grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
-        @media (min-width: 30rem) {
+        @media (min-width: 48rem) {
           grid-template-columns: repeat(4, minmax(0, 1fr));
         }
-
-        @media (min-width: 40rem) {
-          grid-template-columns: repeat(5, minmax(0, 1fr));
-        }
-        @media (min-width: 50rem) {
-          grid-template-columns: repeat(6, minmax(0, 1fr));
-        }
         @media (min-width: 60rem) {
-          grid-template-columns: repeat(7, minmax(0, 1fr));
+          grid-template-columns: repeat(5, minmax(0, 1fr));
         }
       }
     }
