@@ -1,6 +1,5 @@
 ---
-id: "impact-3d"
-status: "hidden"
+status: "archive"
 title: "Impact3D"
 subtitle: "Visualizing the impact of Charitable Donations with Augmented Reality"
 authors: [
@@ -13,7 +12,5 @@ links: [
     ref: "mailto:azza@nyu.edu",
   }
 ]
-abstract: ""
-teaserpic: ""
-thumbnail: ""
+thumbnail: null
 ---

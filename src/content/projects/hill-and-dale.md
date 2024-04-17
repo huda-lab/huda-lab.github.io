@@ -1,6 +1,5 @@
 ---
-id: "hill-and-dale"
-status: "hidden"
+status: "archive"
 title: "Hill and Dale"
 subtitle: "Streaming queries with AQuery"
 authors: ["Ahmad Chatha", "Kostas Zoumbatianos", "Dennis Shasha", "Azza Abouzied"]
@@ -10,7 +9,5 @@ links: [
       ref: "mailto:azza@nyu.edu"
   }
 ]
-abstract: ""
-teaserpic: ""
-thumbnail: ""
+thumbnail: null
 ---
