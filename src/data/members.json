@@ -24,13 +24,30 @@
     "type": "phd"
   },
   {
+    "name": "Junior Garcia",
+    "title": "PhD Candidate",
+    "type": "phd",
+    "image": "images/members/junior.jpg",
+    "email": "jfg388@nyu.edu",
+    "website": "https://www.juniorfranciscogarcia.com"
+  },
+  {
+    "name": "Cole Robert Beasley",
+    "title": "Research Assistant",
+    "image": "images/members/cole-robert.jpg",
+    "email": "crb596@nyu.edu",
+    "website": "https://www.linkedin.com/in/cole-beasley",
+    "year_from": 2022,
+    "type": "RA"
+  },
+  {
     "name": "Zain Tariq",
     "title": "Research Assistant",
     "image": "images/members/zain.jpg",
     "email": "zain.tariq@nyu.edu",
     "website": "https://www.zaintq.com/",
     "year_to": 2020,
-    "type": "Past RA"
+    "type": "RA"
   },
   {
     "name": "Matteo Brucato",
@@ -49,23 +66,6 @@
     "image": "images/members/maeda.jpg",
     "email": "mh4047@nyu.edu",
     "website": "https://maeda.herokuapp.com/"
-  },
-  {
-    "name": "Junior Garcia",
-    "title": "PhD Candidate",
-    "type": "phd",
-    "image": "images/members/junior.jpg",
-    "email": "jfg388@nyu.edu",
-    "website": "https://www.juniorfranciscogarcia.com"
-  },
-  {
-    "name": "Cole Robert Beasley",
-    "title": "Research Assistant",
-    "image": "images/members/cole-robert.jpg",
-    "email": "crb596@nyu.edu",
-    "website": "https://www.linkedin.com/in/cole-beasley",
-    "year_from": 2022,
-    "type": "RA"
   },
   {
     "name": "Lauren McMillen",
@@ -111,6 +111,7 @@
     "email": "rh3015@nyu.edu",
     "website": "https://reemhazim.com/home.html",
     "year_from": 2022,
+    "year_to": 2023,
     "type": "undergrad"
   },
   {
@@ -120,6 +121,7 @@
     "email": "pw1287@nyu.edu",
     "website": "https://phillipw.info/",
     "year_from": 2022,
+    "year_to": 2023,
     "type": "undergrad"
   },
   {
@@ -128,6 +130,7 @@
     "image": "images/members/liam.jpg",
     "email": "lrm444@nyu.edu",
     "year_from": 2022,
+    "year_to": 2023,
     "type": "undergrad"
   },
   {
@@ -197,10 +200,38 @@
     "title": "Student Researcher"
   },
   {
-    "name": "Muhammad Anas",
+    "name": "Pauline Wee",
     "type": "undergrad",
-    "year_from": 2022,
+    "year_from": 2023,
     "title": "Student Researcher",
-    "image": "images/members/muhammad-anas.jpg"
+    "image": "images/members/Pauline_Wee.jpg"
+  },
+  {
+    "name": "Shawn Nassabi",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher",
+    "image": "images/members/Shawn_Nassabi.jpg"
+  },
+  {
+    "name": "Swostik Pati",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher",
+    "image": "images/members/Swostik_Pati.jpg"
+  },
+  {
+    "name": "Linh Tran",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher",
+    "image": "images/members/Linh_Tran.jpg"
+  },
+  {
+    "name": "Nghia Nim",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher",
+    "image": "images/members/Nghia_Nim.jpg"
   }
 ]
