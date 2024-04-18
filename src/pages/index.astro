@@ -1,16 +1,59 @@
 ---
+import "normalize.css/normalize.css";
+import "@fontsource/source-sans-pro/300.css";
+import "@fontsource/source-sans-pro/400.css";
+import "@fontsource-variable/montserrat";
+import "../global.scss";
+
 import About from "../components/About.astro";
 import Members from "../components/Members.astro";
 import Work from "../components/Work.astro";
 import Teaching from "../components/Teaching.astro";
 import JoinUs from "../components/JoinUs.astro";
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={"Human-Data Interaction Lab Website"} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
-<Layout title="Welcome to Human-Data Interaction Lab">
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="/favicon-256x256.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <title>Welcome to Human-Data Interaction Lab</title>
+  </head>
+  <body>
+    <Header />
+    <main>
   <About />
   <Work />
   <Members />
   <Teaching />
   <JoinUs />
-</Layout>
+    </main>
+    <Footer />
+    <style lang="scss">
+      body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </body>
+</html>
