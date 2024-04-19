@@ -4,7 +4,7 @@ $color_link: #5272ac;
   --c-link: #{$color_link};
   --c-link-hover: #{darken($color_link, 10%)};
   --c-bright-header: #aa3d01;
-  --c-neutral-header: #ed7d30;
+  --c-neutral-header: #b1001d;
   --c-dark-header: #2b5865;
   --c-contrast-header: teal;
   --c-text: black;
@@ -14,6 +14,5 @@ $color_link: #5272ac;
   --s-content-width: 60rem;
   --mobile-content-width: 43rem;
 
-
-  --section-padding: 0rem 1rem 6rem 1rem;
+  --section-padding: 0rem 1rem 3rem 1rem;
 }
