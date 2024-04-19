@@ -1,0 +1,21 @@
+---
+const { list } = Astro.props;
+---
+
+<a class="awards">
+  {list.map((a) => <div class="award">🏆 {a}</div>)}
+</a>
+
+<style lang="scss">
+  .awards {
+    .award {
+      background-color: rgb(242, 233, 195);
+      color: var(--c-text);
+      white-space: nowrap;
+      display: inline;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.2rem;
+      font-size: 80%;
+    }
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import Tag from "./Tag.astro";
+const { list } = Astro.props;
+---
+
+<div class="links">
+  {
+    list.map((link) => (
+      <a class="link" href={link.ref}>
+        {link.txt}
+      </a>
+    ))
+  }
+</div>
+
+<style lang="scss">
+  .links {
+    font-size: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    .link {
+      white-space: nowrap;
+      &::after {
+        content: "|";
+        margin-left: 0.5rem;
+      }
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+</style>

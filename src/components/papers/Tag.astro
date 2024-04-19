@@ -1,0 +1,24 @@
+---
+import areas from "../../data/areas.json";
+const { id } = Astro.props;
+const tagData = Object.entries(areas).find(([key, value]) => key === id)[1];
+const color = tagData.color;
+const title = tagData.title;
+---
+
+<a class="tag" style={{ "background-color": color }}>
+  {title}
+</a>
+
+<style lang="scss">
+  .tag {
+    color: white;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    padding: 0.2rem 0.5rem;
+    font-size: 80%;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+  }
+</style>

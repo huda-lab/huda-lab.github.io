@@ -1,0 +1,66 @@
+---
+import Tags from "./Tags.astro";
+import Awards from "./Awards.astro";
+import Links from "./Links.astro";
+const { entry } = Astro.props;
+const data = entry.data;
+---
+
+<div class="paper">
+  <div class="content">
+    <h4 class="title">{data.title}</h4>
+    {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
+    {data.where && <div class="where">{data.where}</div>}
+    <div class="info">
+      {data.tags && data.tags.length > 0 && <Tags list={data.tags} />}
+      {data.awards && data.awards.length > 0 && <Awards list={data.awards} />}
+      {data.links && data.links.length > 0 && <Links list={data.links} />}
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .paper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-left: 5px solid #f0f0f0;
+
+    @media (max-width: 35rem) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+
+      .title {
+        color: var(--c-link);
+      }
+      .description {
+        font-size: 80%;
+      }
+      .authors {
+        color: var(--c-text);
+        margin-bottom: 0.5rem;
+        font-size: 80%;
+      }
+      .where {
+        display: inline-block;
+        color: var(--c-text);
+        font-size: 80%;
+      }
+      .info {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+    }
+  }
+</style>

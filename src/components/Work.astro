@@ -1,17 +1,21 @@
 ---
-import Paper from "./Paper.astro";
+import Paper from "./papers/Paper.astro";
 import { getCollection } from "astro:content";
-const papers = await getCollection("papers");
+let papers = await getCollection("papers");
+papers = papers.sort((a, b) => {
+  const dateA = new Date(a.data.when + "-01");
+  const dateB = new Date(b.data.when + "-01");
+  if (dateA < dateB) return 1;
+  if (dateA > dateB) return -1;
+  return 0;
+});
 ---
 
 <div id="work">
   <h3>Recent Papers</h3>
   <div class="publications">
-    {
-      papers
-        .filter((p) => !p.data.hidden)
-        .map((p) => <Paper entry={p} />)
-    }
+    {papers.map((p) => <Paper entry={p} />)}
+    <!-- TODO: We can show top 10 and then more to show more ... -->
   </div>
 </div>
 
