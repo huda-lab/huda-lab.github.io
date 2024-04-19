@@ -1,0 +1,72 @@
+---
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const data = entry.data;
+---
+
+<div class="paper">
+  {
+    data.thumbnail && (
+      <figure class={"paper-image " + data.status}>
+        <img src={data.thumbnail} alt="paper Thumbnail" />
+      </figure>
+    )
+  }
+  <div class="paper-content">
+    <div class="paper-title">{data.title}</div>
+    {
+      Content && (
+        <div class="paper-description">
+          <Content />
+        </div>
+      )
+    }
+    <div class="paper-authors">{data.authors.join(", ")}</div>
+  </div>
+</div>
+
+<style lang="scss">
+  .paper {
+    display: flex;
+    flex-direction: row;
+    // border-radius: 0.2rem;
+    overflow: hidden;
+    border-left: 5px solid #f0f0f0;
+    // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+    figure {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 10rem;
+        min-height: 100%;
+      }
+    }
+
+    @media (max-width: 35rem) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  .paper-content {
+    flex-grow: 1;
+    padding: 0.5rem;
+
+    .paper-title {
+      color: var(--c-neutral-header);
+    }
+    .paper-description {
+      margin-bottom: 1rem;
+      font-size: 80%;
+    }
+    .paper-authors {
+      color: var(--c-bright-header);
+      font-size: 80%;
+    }
+  }
+</style>

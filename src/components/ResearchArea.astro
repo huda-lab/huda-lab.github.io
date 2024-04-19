@@ -2,6 +2,7 @@
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data;
+const papers = data.papers.filter((paper) => !paper.hidden);
 ---
 
 <div class="research-area">
@@ -9,10 +10,10 @@ const data = entry.data;
   <div class="content">
     <Content />
     {
-      data.papers && (
+      papers.length > 0 && (
         <div class="papers">
           <h3>Papers</h3>
-          {data.papers.map((paper) => (
+          {papers.map((paper) => (
             <a class="paper" href={paper.ref}>
               <div class="title">{paper.txt}</div>
               <div class="authors">{paper.authors.join(", ")}</div>
@@ -31,7 +32,7 @@ const data = entry.data;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
 

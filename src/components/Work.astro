@@ -1,12 +1,12 @@
 ---
-import Project from "./Project.astro";
+import Paper from "./Paper.astro";
 import ResearchArea from "./ResearchArea.astro";
 import { getCollection, getEntryBySlug } from "astro:content";
-const projects = await getCollection("projects");
+const papers = await getCollection("papers");
 const researchAreas = await getCollection("research-areas");
 ---
 
-<div id="projects-list">
+<div id="work">
   <a class="anchor" id="projects-label"></a>
   <h2>Active Research Areas</h2>
   <div class="research-areas">
@@ -19,22 +19,23 @@ const researchAreas = await getCollection("research-areas");
 
   <br />
 
-  <h3>Past Projects</h3>
-  <div class="projects">
+  <h3>Publications</h3>
+  <div class="publications">
     {
-      projects
-        .filter((p) => p.data.status == "archive" && p.data.status !== "hidden")
-        .map((p) => <Project data={p.data} />)
+      papers
+        .filter((p) => !p.data.hidden)
+        .map((p) => <Paper entry={p} />)
     }
   </div>
 </div>
 
 <style lang="scss">
-  #projects-list {
-    max-width: var(--s-content-width);
+  #work {
+    max-width: var(--s-contenjt-width);
     padding: var(--section-padding);
 
-    .projects {
+    .publications {
+      margin-top: 1rem;
       display: grid;
       grid-template-columns: 1fr;
       gap: 1rem;
