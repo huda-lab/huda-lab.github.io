@@ -2,16 +2,6 @@
 title: "Collaborative Decision-Making"
 status: "active"
 papers: [
-  {
-    txt: "\"The Penthouse, Please ... I'll Sleep On the Pullout\" – From Searching to Agreeing on Group Rentals",
-    authors: [
-      "Junior Garcia",
-      "Miro Mannino",
-      "Azza Abouzied"
-    ],
-    year: 2024,
-    ref: ""
-  }
 ]
 thumbnail: "images/projects/crest-thumb.jpg"
 ---

@@ -4,6 +4,7 @@ status: "active"
 papers: [
   {
     txt: "Data Void Exploits: Tracking & Mitigation Strategies",
+    hidden: true,
     authors: [
       "Miro Mannino", "Junior Garcia", "Reem Hazim", "Azza Abouzied", "Paolo Papotti"
     ],

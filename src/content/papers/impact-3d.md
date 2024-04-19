@@ -1,7 +1,6 @@
 ---
-status: "archive"
 title: "Impact3D"
-subtitle: "Visualizing the impact of Charitable Donations with Augmented Reality"
+hidden: true
 authors: [
   "Lauren McMillen", 
   "Azza Abouzied"
@@ -14,3 +13,4 @@ links: [
 ]
 thumbnail: null
 ---
+Visualizing the impact of Charitable Donations with Augmented Reality
