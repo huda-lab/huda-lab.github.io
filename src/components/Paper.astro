@@ -1,6 +1,6 @@
 ---
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+let { Content } = await entry.render();
 const data = entry.data;
 ---
 
@@ -29,10 +29,8 @@ const data = entry.data;
   .paper {
     display: flex;
     flex-direction: row;
-    // border-radius: 0.2rem;
     overflow: hidden;
     border-left: 5px solid #f0f0f0;
-    // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 
     figure {
       margin: 0;
@@ -61,7 +59,6 @@ const data = entry.data;
       color: var(--c-neutral-header);
     }
     .paper-description {
-      margin-bottom: 1rem;
       font-size: 80%;
     }
     .paper-authors {
