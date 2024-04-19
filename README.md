@@ -2,7 +2,7 @@
 
 Our Human Data Interaction Lab Website
 
-## 🚀 Project Structure
+## Project Structure
 
 This project uses [Astro](https://astro.build/) to make it easy to, data-driven, with reusable components, and performant.
 

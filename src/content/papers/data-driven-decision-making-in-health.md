@@ -1,6 +1,6 @@
 ---
 title: "Data-Driven Decision Making in Health"
-hidden: false
+hidden: true
 authors: [
   "Dennis Shasha",
   "Azza Abouzied",
