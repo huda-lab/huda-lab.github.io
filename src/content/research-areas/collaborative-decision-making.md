@@ -1,8 +1,10 @@
 ---
 title: "Collaborative Decision-Making"
-status: "active"
+hidden: false
 papers: [
+  "crest"
 ]
-thumbnail: "images/projects/crest-thumb.jpg"
+color: "#adf6ed"
+thumbnail: null
 ---
 Collaborative tasks require more than just basic support, with diverse preferences and possibly conflicting requirements, promoting agreement, by effective mediation principles.

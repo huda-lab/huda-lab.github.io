@@ -1,6 +1,6 @@
 ---
 title: "Decision-Making in Uncertain Environments"
-status: "active"
+hidden: false
 papers: [
   {
     txt: "Scaling Package Queries to a Billion Tuples via Hierarchical
@@ -12,5 +12,6 @@ Partitioning and Customized Optimization",
     ref: "https://arxiv.org/pdf/2307.02860.pdf"
   }
 ]
+color: "#c9f6ad"
 thumbnail: null
 ---

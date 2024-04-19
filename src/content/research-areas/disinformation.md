@@ -1,6 +1,6 @@
 ---
 title: "Disinformation, and its Mitigation"
-status: "active"
+hidden: false
 papers: [
   {
     txt: "Data Void Exploits: Tracking & Mitigation Strategies",
@@ -21,5 +21,6 @@ papers: [
     ref: "https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s657_paper.pdf"
   }
 ]
+color: "#f6efad"
 thumbnail: null
 ---
