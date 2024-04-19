@@ -1,7 +1,7 @@
 ---
 title: "\"The Penthouse, Please ... I'll Sleep On the Pullout\" – From Searching to Agreeing on Group Rentals"
 year: 2024
-hidden: false
+hidden: true
 authors: [
   "Junior Garcia",
   "Miro Mannino",
