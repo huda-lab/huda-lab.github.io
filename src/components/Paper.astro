@@ -16,6 +16,7 @@ const data = entry.data;
   }
   <div class="content">
     <div class="title">{data.title}</div>
+    {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
     {
       Content && (
         <div class="description">
@@ -23,7 +24,6 @@ const data = entry.data;
         </div>
       )
     }
-    {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
     {
       data.tags && (
         <div class="tags">
@@ -62,6 +62,7 @@ const data = entry.data;
       }
       .authors {
         color: var(--c-bright-header);
+        margin-bottom: 0.5rem;
         font-size: 80%;
       }
       .tags {

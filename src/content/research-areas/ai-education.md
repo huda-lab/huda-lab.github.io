@@ -4,7 +4,7 @@ hidden: false
 papers: [
   "reader-quizzer"
 ]
-color: "#f6adad"
+color: "#e056fd"
 thumbnail: null
 ---
 Using AI for Education and Healthcare

@@ -12,6 +12,6 @@ Partitioning and Customized Optimization",
     ref: "https://arxiv.org/pdf/2307.02860.pdf"
   }
 ]
-color: "#c9f6ad"
+color: "#30336b"
 thumbnail: null
 ---

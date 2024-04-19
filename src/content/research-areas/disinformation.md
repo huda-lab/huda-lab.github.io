@@ -21,6 +21,6 @@ papers: [
     ref: "https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s657_paper.pdf"
   }
 ]
-color: "#f6efad"
+color: "#535c68"
 thumbnail: null
 ---
