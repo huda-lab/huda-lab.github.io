@@ -1,4 +1,6 @@
 ---
+import Tag from "./Tag.astro";
+
 const { entry } = Astro.props;
 let { Content } = await entry.render();
 const data = entry.data;
@@ -12,16 +14,27 @@ const data = entry.data;
       </figure>
     )
   }
-  <div class="paper-content">
-    <div class="paper-title">{data.title}</div>
+  <div class="content">
+    <div class="title">{data.title}</div>
     {
       Content && (
-        <div class="paper-description">
+        <div class="description">
           <Content />
         </div>
       )
     }
-    <div class="paper-authors">{data.authors.join(", ")}</div>
+    {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
+    {
+      data.tags && (
+        <div class="tags">
+          {data.tags.map((t) => (
+            <div class="tag">
+              <Tag id={t} />
+            </div>
+          ))}
+        </div>
+      )
+    }
   </div>
 </div>
 
@@ -31,6 +44,30 @@ const data = entry.data;
     flex-direction: row;
     overflow: hidden;
     border-left: 5px solid #f0f0f0;
+
+    @media (max-width: 35rem) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 0.5rem;
+
+      .title {
+        color: var(--c-neutral-header);
+      }
+      .description {
+        font-size: 80%;
+      }
+      .authors {
+        color: var(--c-bright-header);
+        font-size: 80%;
+      }
+      .tags {
+        margin-top: 0.5rem;
+      }
+    }
 
     figure {
       margin: 0;
@@ -43,27 +80,6 @@ const data = entry.data;
         max-height: 10rem;
         min-height: 100%;
       }
-    }
-
-    @media (max-width: 35rem) {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-  }
-
-  .paper-content {
-    flex-grow: 1;
-    padding: 0.5rem;
-
-    .paper-title {
-      color: var(--c-neutral-header);
-    }
-    .paper-description {
-      font-size: 80%;
-    }
-    .paper-authors {
-      color: var(--c-bright-header);
-      font-size: 80%;
     }
   }
 </style>
