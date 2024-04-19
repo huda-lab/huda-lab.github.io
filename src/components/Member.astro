@@ -40,7 +40,9 @@ const { member, photo } = Astro.props;
       }
 
       img {
-        opacity: 0.9;
+        opacity: 1;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
         object-fit: cover;
         width: 100%;
         display: block;
@@ -49,7 +51,7 @@ const { member, photo } = Astro.props;
 
     &[href]:hover {
       img {
-        filter: opacity(80%);
+        filter: opacity(100%);
       }
     }
   }

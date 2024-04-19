@@ -1,11 +1,11 @@
 ---
-title: "Qetch"
+title: "Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches"
 hidden: false
 authors: [
   "Miro Mannino", 
   "Azza Abouzied"
 ]
-award: "Best Paper Award (top 1%)"
+award: "Best Paper Award"
 links: [
   {
     txt: "Paper @ CHI 2018",
