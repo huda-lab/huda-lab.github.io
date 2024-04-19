@@ -1,8 +1,7 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
-const researchAreas = await getCollection("research-areas");
+import areas from "../data/areas.json";
 const { id } = Astro.props;
-const tagData = researchAreas.filter((area) => area.slug === id)[0].data;
+const tagData = Object.entries(areas).find(([key, value]) => key === id)[1];
 const color = tagData.color;
 const title = tagData.title;
 ---

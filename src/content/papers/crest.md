@@ -7,7 +7,7 @@ authors: [
   "Miro Mannino",
   "Azza Abouzied"
 ]
-tags: ['collaborative-decision-making']
+tags: ['decision-making']
 links: [
   {
     txt: "Tech Report Available on Request",

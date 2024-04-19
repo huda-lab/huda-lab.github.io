@@ -9,6 +9,7 @@ authors: [
   "Dennis Shasha",
   "Azza Abouzied"
 ]
+tags: ['decision-making']
 links: [
   {
     txt: "Official Website",
