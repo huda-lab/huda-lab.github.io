@@ -4,6 +4,7 @@ import ResearchArea from "./ResearchArea.astro";
 import { getCollection, getEntryBySlug } from "astro:content";
 const papers = await getCollection("papers");
 const researchAreas = await getCollection("research-areas");
+import Tag from "./Tag.astro";
 ---
 
 <div id="work">
@@ -12,7 +13,7 @@ const researchAreas = await getCollection("research-areas");
   <div class="research-areas">
     {
       researchAreas
-        .filter((e) => e.data.status == "active")
+        .filter((e) => !e.data.hidden)
         .map((e) => <ResearchArea entry={e} />)
     }
   </div>

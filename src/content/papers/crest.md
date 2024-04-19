@@ -1,12 +1,13 @@
 ---
 title: "\"The Penthouse, Please ... I'll Sleep On the Pullout\" – From Searching to Agreeing on Group Rentals"
 year: 2024
-hidden: true
+hidden: false
 authors: [
   "Junior Garcia",
   "Miro Mannino",
   "Azza Abouzied"
 ]
+tags: ['collaborative-decision-making']
 links: [
   {
     txt: "Tech Report Available on Request",
