@@ -5,24 +5,29 @@ const data = entry.data;
 ---
 
 <div class="paper">
+  <!--
   {
     data.thumbnail && (
       <figure class={"paper-image " + data.status}>
         <img src={data.thumbnail} alt="paper Thumbnail" />
       </figure>
     )
-  }
+  }-->
+  <!-- TODO: Sort papers in descending order by year-->
   <div class="paper-content">
     <div class="paper-title">{data.title}</div>
     <div class="paper-authors">{data.authors.join(", ")}</div>
+    <!-- TODO: What we need instead here are tags, links and a special emoji for awards! --->
+    <!--
     {
       Content && (
         <div class="paper-description">
           <Content />
         </div>
       )
-    }
+    }-->
   </div>
+  <!-- TODO: We can show top 10 and then more to show more ... -->
 </div>
 
 <style lang="scss">
