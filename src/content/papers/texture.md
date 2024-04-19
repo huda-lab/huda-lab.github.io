@@ -1,5 +1,5 @@
 ---
-title: "Texture"
+title: "Texture: A Collaborative Framework for Structure Identification over Print Documents"
 hidden: false
 year: 2019
 authors: [
@@ -14,4 +14,3 @@ links: [
   }
 ]
 ---
-A Collaborative Framework for Structure Identification over Print Documents
