@@ -1,33 +1,21 @@
 ---
 import Tag from "./Tag.astro";
-
 const { entry } = Astro.props;
-let { Content } = await entry.render();
 const data = entry.data;
 ---
 
 <div class="paper">
-  <!--
-  {
+  { // if there is no thumbnail nothing is displayed
     data.thumbnail && (
       <figure class={"paper-image " + data.status}>
         <img src={data.thumbnail} alt="paper Thumbnail" />
       </figure>
     )
-  }-->
+  }
   <!-- TODO: Sort papers in descending order by year-->
   <div class="content">
     <div class="title">{data.title}</div>
     {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
-    <!-- TODO: What we need instead here are tags, links and a special emoji for awards! --->
-    <!--
-    {
-      Content && (
-        <div class="description">
-          <Content />
-        </div>
-      )
-    }
     {
       data.tags && (
         <div class="tags">
@@ -40,6 +28,7 @@ const data = entry.data;
       )
     }
   </div>
+  <!-- TODO: links and a special emoji for awards! --->
   <!-- TODO: We can show top 10 and then more to show more ... -->
 </div>
 

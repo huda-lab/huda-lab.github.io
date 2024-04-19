@@ -27,11 +27,8 @@ This project uses [Astro](https://astro.build/) to make it easy to, data-driven,
 │   │   │   ├── crest.md
 │   │   │   ├── qetch.md
 │   │   │   └── ...
-│   │   └── research-areas/
-│   │       ├── ai-education.md
-│   │       ├── disinformation.md
-│   │       └── ...
 │   └── data/
+│       └── areas.json
 │       └── members.json
 └── package.json (all projects dependencies)
 ```
