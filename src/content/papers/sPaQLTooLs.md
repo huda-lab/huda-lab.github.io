@@ -10,7 +10,7 @@ authors: [
   "Peter J. Haas", 
   "Alexandra Meliou"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 acknowledgments: "This work was supported by the NYUAD Center for Interacting Urban Networks (CITIES), and funded by: Tamkeen under the NYUAD Research Institute Award CG001, the Swiss Re Institute under the Quantum Cities initiative, and the National Science Foundation under grants IIS-1453543 and IIS-1943971." 
 awards: ["Best Demonstration Award"]
 links: [

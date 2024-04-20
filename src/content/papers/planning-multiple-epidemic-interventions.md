@@ -8,7 +8,7 @@ authors: [
   "Azza Abouzied", 
   "Dennis Shasha"
 ]
-tags: ["decision-making"]
+tags: ["dm"]
 acknowledgments: "This work was supported by the NYUAD Center for Interacting Urban Networks (CITIES), funded by Tamkeen under the NYUAD Research Institute Award CG001, by the NYUAD COVID-19 Facilitator Research Fund, and by the ASPIRE Award for Research Excellence (AARE-2020) grant
 AARE20-307."
 links: [

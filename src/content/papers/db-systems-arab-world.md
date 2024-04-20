@@ -9,7 +9,7 @@ authors: [
   "Karima Echihabi",
   "Mourad Ouzzani"
 ]
-tags: ["powering-up-users"]
+tags: ["dm"]
 links: [
   {
     txt: "Paper",

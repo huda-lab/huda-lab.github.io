@@ -10,7 +10,7 @@ authors: [
   "Azza Abouzied",
   "Dennis Shasha"
 ]
-tags: ['decision-making']
+tags: ['powerup', 'dm']
 links: [
   {
     txt: "Paper",

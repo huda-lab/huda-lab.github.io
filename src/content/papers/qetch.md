@@ -7,8 +7,8 @@ authors: [
   "Miro Mannino",
   "Azza Abouzied"
 ]
+tags: ["powerup"]
 awards: ["Best Paper Award"]
-tags: ["powering-up-users"]
 links: [
   {
     txt: "Paper",

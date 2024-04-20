@@ -8,7 +8,7 @@ authors: [
   "Azza Abouzied", 
   "Alexandra Meliou"
 ]
-tags: ["powering-up-users"]
+tags: ["dm"]
 acknowledgments: "This research is supported by the National Science Foundation under grants IIS-1420941, IIS-1421322, and IIS-1453543." 
 awards: ["CACM Research Highlight"]
 links: [

@@ -1,13 +1,13 @@
 ---
 title: "Synner: Generating Realistic Synthetic Data"
 link: "https://dl.acm.org/doi/abs/10.1145/3318464.3384696"
-where: "SIGMOD '20"
+where: "SIGMOD'20"
 when: "2020-06"
 authors: [ 
   "Miro Mannino",
   "Azza Abouzied"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 links: [
   {
     txt: "Paper",

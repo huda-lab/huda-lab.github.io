@@ -8,7 +8,7 @@ authors: [
   "Miro Mannino", 
   "Azza Abouzied"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 links: [
   {
     txt: "Paper",

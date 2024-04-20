@@ -8,7 +8,7 @@ authors: [
   "Azza Abouzied", 
   "Nancy Gleason"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 links: [
   {
     txt: "Paper",

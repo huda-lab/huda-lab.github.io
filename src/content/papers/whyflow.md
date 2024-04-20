@@ -9,7 +9,7 @@ authors: [
   "Marina Danilevsky", 
   "Yunyao Li"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 acknowledgments: "" 
 awards: []
 links: [
