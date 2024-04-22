@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "In-Database Decision Support: Opportunities and Challenges"
 link: "https://dl.acm.org/doi/10.1145/3447750"
 where: "IEEE Data Engineering Bulletin 2022"
 when: "2022-09"

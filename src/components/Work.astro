@@ -16,25 +16,33 @@ papers = papers.sort((a, b) => {
   <div class="publications">
     {
       papers.map((p, index) => (
-        <div class={index >= 10 ? "paper hidden" : "paper"} client:visible>
+        <div class={`paper ${index >= 5 ? "hidden" : ""}`}>
           <Paper entry={p} />
         </div>
       ))
     }
-    <button type="button" id="show-more-publications">Show More</button>
+    <button type="button" id="show-more">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+        ></path>
+      </svg>
+    </button>
   </div>
 </div>
 
 <script>
-  const button = document.getElementById("show-more-publications");
-  const hiddenPapers = document.querySelectorAll(".hidden");
-  button.onclick = () => {
-    hiddenPapers.forEach((paper) => {
-      paper.classList.toggle("hidden");
+  document.getElementById("show-more").addEventListener("click", () => {
+    const hiddenPapers = Array.from(document.querySelectorAll(".hidden"));
+    hiddenPapers.slice(0, 5).forEach((paper) => {
+      paper.classList.remove("hidden");
     });
-    button.textContent =
-      button.textContent === "Show More" ? "Show Less" : "Show More";
-  };
+    if (hiddenPapers.length <= 5) {
+      document.getElementById("show-more").style.display = "none";
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -56,19 +64,31 @@ papers = papers.sort((a, b) => {
         grid-template-columns: repeat(1, minmax(0, 1fr));
       }
     }
+
     .hidden {
       display: none;
     }
 
-    #show-more-publications {
+    #show-more {
+      display: inline;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
-      background-color: var(--c-link);
+
+    background-color: #f0f0f0;
+      border-radius: 0.2rem;
       color: white;
       border: none;
       cursor: pointer;
+      svg {
+        fill: var(--c-text);
+        height: 1rem;
+      }
       &:hover {
-        background-color: var(--c-link-hover);
+    background-color: #f5f5f5;
+        color: var(--c-link-hover);
+        svg {
+          fill: var(--c-link-hover);
+        }
       }
     }
   }

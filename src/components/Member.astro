@@ -40,18 +40,16 @@ const { member, photo } = Astro.props;
       }
 
       img {
-        opacity: 1;
         filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
         object-fit: cover;
         width: 100%;
         display: block;
       }
     }
 
-    &[href]:hover {
-      img {
-        filter: opacity(100%);
+    &:hover {
+      figure > img {
+        filter: grayscale(0%)
       }
     }
   }
