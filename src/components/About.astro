@@ -17,8 +17,7 @@ import areas from "../data/areas.json";
         {
           Object.entries(areas).map(([id, val]) => (
             <li class="area">
-              <div class="title">{val.title}</div>
-              {val.description}
+              <div class="title" style={{ "background-color": val.color }}>{val.title}</div><div class="description">{val.description}</div>
             </li>
           ))
         }
@@ -33,10 +32,26 @@ import areas from "../data/areas.json";
 
         #areas {
           list-style-type: none;
-          padding-left: 0.5rem;
-          .title {
-            display: block;
-            font-weight: 500;
+          padding-left: 0;
+
+          @media (min-width: 40rem) {
+            padding-left: 1rem;
+          }
+
+          .area {
+            > div {
+              display: inline;
+            }
+
+            .title {
+              margin-right: 0.5rem;
+              border-radius: 0.2rem;
+              color: white;
+              padding: 0.2rem 0.5rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-transform: uppercase;
+            }
           }
         }
       }

@@ -14,10 +14,28 @@ papers = papers.sort((a, b) => {
 <div id="work">
   <h3>Recent Papers</h3>
   <div class="publications">
-    {papers.map((p) => <Paper entry={p} />)}
-    <!-- TODO: We can show top 10 and then more to show more ... -->
+    {
+      papers.map((p, index) => (
+        <div class={index >= 10 ? "paper hidden" : "paper"} client:visible>
+          <Paper entry={p} />
+        </div>
+      ))
+    }
+    <button type="button" id="show-more-publications">Show More</button>
   </div>
 </div>
+
+<script>
+  const button = document.getElementById("show-more-publications");
+  const hiddenPapers = document.querySelectorAll(".hidden");
+  button.onclick = () => {
+    hiddenPapers.forEach((paper) => {
+      paper.classList.toggle("hidden");
+    });
+    button.textContent =
+      button.textContent === "Show More" ? "Show Less" : "Show More";
+  };
+</script>
 
 <style lang="scss">
   #work {
@@ -36,6 +54,21 @@ papers = papers.sort((a, b) => {
       }
       @media (min-width: 60rem) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+    .hidden {
+      display: none;
+    }
+
+    #show-more-publications {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--c-link);
+      color: white;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--c-link-hover);
       }
     }
   }

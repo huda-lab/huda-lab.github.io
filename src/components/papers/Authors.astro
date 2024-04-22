@@ -1,0 +1,32 @@
+---
+import members from "../../data/members.json";
+const { list } = Astro.props;
+---
+
+<div class="authors">
+  {
+    list.map((name, idx) => {
+      let c = [];
+      for (let m of members) {
+        if (m.name == name && m.website) {
+          c.push(<a href={m.website}>{m.name}</a>);
+        }
+      }
+      if (c.length == 0) {
+        c.push(<span>{name}</span>);
+      }
+      if (idx < list.length - 1) {
+        c.push(<span>, </span>);
+      }
+      return c;
+    })
+  }
+</div>
+
+<style lang="scss">
+  .authors {
+    a {
+      color: var(--c-text);
+    }
+  }
+</style>

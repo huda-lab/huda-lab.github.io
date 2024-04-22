@@ -2,14 +2,15 @@
 import Tags from "./Tags.astro";
 import Awards from "./Awards.astro";
 import Links from "./Links.astro";
+import Authors from "./Authors.astro";
 const { entry } = Astro.props;
 const data = entry.data;
 ---
 
 <div class="paper">
   <div class="content">
-    <h4 class="title">{data.title}</h4>
-    {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
+    <h4 class="title"><a href={data.link}>{data.title}</a></h4>
+    <Authors list={data.authors} />
     {data.where && <div class="where">{data.where}</div>}
     <div class="info">
       {data.tags && data.tags.length > 0 && <Tags list={data.tags} />}
