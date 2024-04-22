@@ -13,7 +13,7 @@
   },
   "disinfo": {
     "title": "Mitigating Disinformation",
-    "description": "We are studying how disinformers spread their narratives especially in the absence of data and how we can help mitigators detect, assess the threat of a disinformation campaign, and effectively respond to it.",
+    "description": "We are studying how disinformers spread their narratives especially in the absence of data and how we can help mitigators detect and assess the threat of a disinformation campaign, and effectively respond to it.",
     "color": "#e7298a",
     "key": "disinfo"
   }
