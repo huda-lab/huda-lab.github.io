@@ -1,7 +1,7 @@
 ---
 title: "Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches"
 link: "https://dl.acm.org/doi/abs/10.1145/3183713.3193547"
-where: "CHI '18"
+where: "CHI 2018"
 when: "2018-04"
 authors: [ 
   "Miro Mannino",

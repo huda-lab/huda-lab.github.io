@@ -1,7 +1,7 @@
 ---
 title: "sPaQLTooLs: A Stochastic Package Query Interface for Scalable Constrained Optimization"
 link: "https://par.nsf.gov/servlets/purl/10193275"
-where: "VLDB'20"
+where: "VLDB 2020"
 when: "2020-09"
 authors: [ 
   "Matteo Brucato", 

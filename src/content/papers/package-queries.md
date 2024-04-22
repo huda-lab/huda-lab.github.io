@@ -1,8 +1,8 @@
 ---
 title: "Package queries: efficient and scalable computation of high-order constraints"
 link: "https://link.springer.com/article/10.1007/s00778-017-0483-4"
-where: "The VLDB Journal. Vol 27"
-when: "2017-01"
+where: "The VLDB Journal 2017"
+when: "2017-10"
 authors: [ 
   "Matteo Brucato",
   "Azza Abouzied", 

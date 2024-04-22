@@ -1,7 +1,7 @@
 ---
 title: "Scalable computation of high-order optimization queries"
 link: "https://dl.acm.org/doi/abs/10.1145/3299881"
-where: "Communications of the ACM. Vol. 62, No. 2"
+where: "Communications of the ACM 2019"
 when: "2019-01"
 authors: [ 
   "Matteo Brucato",

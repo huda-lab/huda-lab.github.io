@@ -1,7 +1,7 @@
 ---
 title: "ReaderQuizzer: Augmenting Research Papers with Just-In-Time Learning Questions to Facilitate Deeper Understanding"
 link: "https://dl.acm.org/doi/abs/10.1145/3584931.3607494"
-where: "CSCW '23"
+where: "CSCW 2023"
 when: "2023-10"
 authors: [
   "Liam Richards", 

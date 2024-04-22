@@ -1,7 +1,7 @@
 ---
 title: "Texture: A Collaborative Framework for Structure Identification over Print Documents"
 link: "https://dl.acm.org/doi/abs/10.1145/3328519.3329131"
-where: "HILDA'19"
+where: "HILDA 2019"
 when: "2019-07"
 authors: [
   "Maeda Hanafi", 

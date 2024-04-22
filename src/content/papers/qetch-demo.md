@@ -1,7 +1,7 @@
 ---
 title: "Qetch: Time series querying with expressive sketches"
 link: "https://dl.acm.org/doi/abs/10.1145/3173574.3173962"
-where: "SIGMOD '18"
+where: "SIGMOD 2018"
 when: "2018-05"
 authors: [ 
   "Miro Mannino",

@@ -10,11 +10,11 @@ const data = entry.data;
   <div class="content">
     <h4 class="title">{data.title}</h4>
     {data.authors && <div class="authors">{data.authors.join(", ")}</div>}
-    {data.where && <div class="where">{data.where}
-      <div>
-        {data.links && data.links.length > 0 && <Links list={data.links} />}
-      </div>
-    </div>}
+    <div class="where">{data.where}</div>
+    {data.funding && <div class="funding">Funded by {data.funding.join(", ")}</div>}
+    <div class="links">
+    {data.links && data.links.length > 0 && <Links list={data.links} />}
+    </div>
     <div class="info">
       {data.tags && data.tags.length > 0 && <Tags list={data.tags} />}
       {data.awards && data.awards.length > 0 && <Awards list={data.awards} />}
@@ -52,10 +52,17 @@ const data = entry.data;
         /*margin-bottom: 0.1rem;*/
         font-size: 90%;
       }
+      .links {
+          font-size: 80%;
+      }
       .where {
         display: inline-block;
         color: var(--c-text);
         font-size: 80%;
+      }
+      .funding{
+        font-size: 80%;
+        font-style: italic;
       }
       .info {
         display: flex;
@@ -63,6 +70,7 @@ const data = entry.data;
         flex-wrap: wrap;
         flex-direction: row;
         gap: 0.5rem;
+        font-size: 90%;
       }
     }
   }

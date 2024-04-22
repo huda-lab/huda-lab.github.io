@@ -2,7 +2,7 @@
 title: "Scaling Package Queries to a Billion Tuples via Hierarchical Partitioning and Customized Optimization"
 link: "https://arxiv.org/abs/2307.02860"
 when: "2024-01"
-where: "VLDB'24"
+where: "VLDB 2024"
 authors: [ 
   "Ahn Mai",
   "Matteo Brucato",
@@ -11,6 +11,7 @@ authors: [
   "Peter Haas",
   "Alexandra Meliou"
 ]
+funding: ["CITIES", "ASPIRE AARE20-307"]
 acknowledgments: "This work was supported by the ASPIRE Award for Research Excellence (AARE-2020) grant AARE20-307 and NYUAD CITIES, funded by Tamkeen under the Research Institute Award CG001, and by the National Science Foundation under grants 1943971 and 2211918." 
 tags: ["dm"]
 links: [

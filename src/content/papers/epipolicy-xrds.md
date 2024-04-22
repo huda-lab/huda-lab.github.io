@@ -1,7 +1,7 @@
 ---
 title: "EpiPolicy: a tool for combating epidemics"
 link: "https://dl.acm.org/doi/abs/10.1145/3495257"
-where: "XRDS: Crossroads, The ACM Magazine for Students Vol. 28, No. 2"
+where: "XRDS: Crossroads 2022"
 when: "2022-01"
 authors: [
   "Anh Mai",

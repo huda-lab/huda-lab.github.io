@@ -1,7 +1,7 @@
 ---
 title: "Stochastic Package Queries in Probabilistic Databases"
 link: "https://dl.acm.org/doi/abs/10.1145/3318464.3389765"
-where: "SIGMOD'20"
+where: "SIGMOD 2020"
 when: "2020-06"
 authors: [ 
   "Matteo Brucato", 
