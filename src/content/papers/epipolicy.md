@@ -1,7 +1,7 @@
 ---
 title: "Planning Epidemic Interventions with EpiPolicy"
 link: "https://dl.acm.org/doi/10.1145/3472749.3474794"
-where: "UIST '21"
+where: "UIST 2021"
 when: "2021-10"
 authors: [
   "Zain Tariq",
@@ -11,7 +11,8 @@ authors: [
   "Dennis Shasha",
   "Azza Abouzied"
 ]
-tags: ['decision-making']
+tags: ['powerup', 'dm']
+funding: ["CITIES", "ASPIRE AARE20-307"]
 acknowledgments: "This work was supported by the NYUAD Center for Interacting Urban Networks (CITIES), funded by Tamkeen under the NYUAD Research Institute Award CG001, by the Swiss Re Institute under the Quantum Cities™ initiative, and by the NYUAD COVID-19 Facilitator Research Fund"
 links: [
   {

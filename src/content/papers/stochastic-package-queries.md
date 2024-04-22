@@ -1,7 +1,7 @@
 ---
 title: "Stochastic Package Queries in Probabilistic Databases"
 link: "https://dl.acm.org/doi/abs/10.1145/3318464.3389765"
-where: "SIGMOD '20"
+where: "SIGMOD 2020"
 when: "2020-06"
 authors: [ 
   "Matteo Brucato", 
@@ -10,13 +10,17 @@ authors: [
   "Peter J. Haas" , 
   "Alexandra Meliou"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 acknowledgments: "This work was supported by the NYUAD Center for Interacting Urban Networks (CITIES), and funded by: Tamkeen under the NYUAD Research Institute Award CG001, the Swiss Re Institute under the Quantum Cities initiative, and the National Science Foundation under grants IIS-1453543 and IIS-1943971. The authors would like to thank the anonymous reviewers for their valuable insights, and Arya Mazumdar, Nishad Ranade, and Senay Solak for their help and suggestions during various phases of the work." 
 awards: []
 links: [
   {
     txt: "Paper",
     ref: "/papers/stochastic-package-queries.pdf"
+  },
+  {
+    txt: "Talk",
+    ref: "https://www.youtube.com/watch?v=APmuaZbZnOg"
   }
 ]
 ---

@@ -1,13 +1,13 @@
 ---
 title: "Is this Real?: Generating Synthetic Data that Looks Real"
 link: "https://dl.acm.org/doi/abs/10.1145/3332165.3347866"
-where: "UIST '19"
+where: "UIST 2019"
 when: "2019-10"
 authors: [ 
   "Miro Mannino",
   "Azza Abouzied"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 links: [
   {
     txt: "Paper",

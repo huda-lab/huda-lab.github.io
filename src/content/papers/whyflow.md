@@ -1,7 +1,7 @@
 ---
 title: "WhyFlow: Explaining Errors in Data Flows Interactively"
 link: "https://dl.acm.org/doi/..."
-where: "DaSH@KDD’20"
+where: "DaSH@KDD 2020"
 when: "2020-08"
 authors: [ 
   "Maeda Hanafi", 
@@ -9,7 +9,7 @@ authors: [
   "Marina Danilevsky", 
   "Yunyao Li"
 ]
-tags: ["powering-up-users"]
+tags: ["powerup"]
 acknowledgments: "" 
 awards: []
 links: [

@@ -2,13 +2,15 @@
 title: "Planning multiple epidemic interventions with reinforcement learning"
 link: "https://arxiv.org/abs/2301.12802"
 when: "2023-01"
+where: "IJCAI 2023"
 authors: [ 
   "Anh Mai", 
   "Nikunj Gupta", 
   "Azza Abouzied", 
   "Dennis Shasha"
 ]
-tags: ["decision-making"]
+tags: ["dm"]
+funding: ["CITIES", "ASPIRE AARE", "NYUAD Covid-19 Facilitator Grant"]
 acknowledgments: "This work was supported by the NYUAD Center for Interacting Urban Networks (CITIES), funded by Tamkeen under the NYUAD Research Institute Award CG001, by the NYUAD COVID-19 Facilitator Research Fund, and by the ASPIRE Award for Research Excellence (AARE-2020) grant
 AARE20-307."
 links: [
@@ -23,6 +25,10 @@ links: [
   {
     txt: "GitHub Repository",
     ref: "https://github.com/huda-lab/RL-Epidemic-Benchmark"
+  },
+  {
+    txt: "Talk",
+    ref: "https://ijcai-23.org/video/?vid=39005564"
   }
 ]
 ---

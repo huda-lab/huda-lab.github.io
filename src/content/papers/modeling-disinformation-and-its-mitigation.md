@@ -1,7 +1,7 @@
 ---
 title: "Tactics, Threats & Targets: Modeling Disinformation and its Mitigation"
 link: "https://www.ndss-symposium.org/wp-content/uploads/2023-657-paper.pdf"
-where: "NDSS'23"
+where: "NDSS 2023"
 when: "2023-03"
 authors: [ 
   "Shujaat Mirza",
@@ -12,7 +12,8 @@ authors: [
   "Paolo Papotti",
   "Christina Popper"
 ]
-tags: ["mitigation-disinformation"]
+tags: ["disinfo"]
+funding: ["CITIES", "CCS"]
 acknowledgments: "This work was supported by NYUAD’s Centers for Cyber Security (CCSAD) and Interacting Urban Networks (CITIES funded by Tamkeen under the Research Institute Award CG001), ASPIRE AARE-2020-307 and supported by CHISTERA within the CIMPLE project (CHIST-ERA-19-XAI-003)" 
 awards: []
 links: [
