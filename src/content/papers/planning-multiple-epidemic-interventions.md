@@ -2,6 +2,7 @@
 title: "Planning multiple epidemic interventions with reinforcement learning"
 link: "https://arxiv.org/abs/2301.12802"
 when: "2023-01"
+where: "IJCAI'23"
 authors: [ 
   "Anh Mai", 
   "Nikunj Gupta", 
@@ -23,6 +24,10 @@ links: [
   {
     txt: "GitHub Repository",
     ref: "https://github.com/huda-lab/RL-Epidemic-Benchmark"
+  },
+  {
+    txt: "Talk",
+    ref: "https://ijcai-23.org/video/?vid=39005564"
   }
 ]
 ---

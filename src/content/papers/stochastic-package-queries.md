@@ -17,6 +17,10 @@ links: [
   {
     txt: "Paper",
     ref: "/papers/stochastic-package-queries.pdf"
+  },
+  {
+    txt: "Talk",
+    ref: "https://www.youtube.com/watch?v=APmuaZbZnOg"
   }
 ]
 ---

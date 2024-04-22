@@ -1,5 +1,6 @@
 ---
 import areas from "../data/areas.json";
+import Tag from "./papers/Tag.astro";
 ---
 
 <div id="about">
@@ -13,17 +14,19 @@ import areas from "../data/areas.json";
     <p>
       Our areas of focus change as researchers join or graduate from our lab.
       Currently, we are working on these three areas:
+    </p>
       <ul id="areas">
         {
           Object.entries(areas).map(([id, val]) => (
             <li class="area">
-              <div class="title">{val.title}</div>
+              <div class="tag"><Tag id={val.key} /></div>
+              <!--<div class="title">{val.title}</div>-->
               {val.description}
             </li>
           ))
         }
       </ul>
-    </p>
+
 
     <style lang="scss">
       #about {
@@ -41,5 +44,4 @@ import areas from "../data/areas.json";
         }
       }
     </style>
-  </p>
 </div>

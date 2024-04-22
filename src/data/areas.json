@@ -2,19 +2,19 @@
   "dm": {
     "title": "Decision-making",
     "description": "We are building scalable systems for prescriptive analytics with uncertain data. We are also designing tools to support group decision-making.",
-    "color": "#e056fd",
+    "color": "#6a3d9a",
     "key" : "dm"
   },
   "powerup": {
     "title": "Powering-up Users",
     "description": "We are working on tools that can fully automate data analysis pipelines, use examples to synthesize queries or scripts for specific data analysis tasks, or aid with the distillation of unstructured data such as documents. We dive into specific domains such as healthcare, education, finance, etc.",
-    "color": "#7ed6df",
+    "color": "#1b9e77",
     "key" : "powerup"
   },
   "disinfo": {
     "title": "Mitigating Disinformation",
     "description": "We are studying how disinformers spread their narratives especially in the absence of data and how we can help mitigators detect, assess the threat of a disinformation campaign, and effectively respond to it.",
-    "color": "#30336b",
+    "color": "#e7298a",
     "key": "disinfo"
   }
 }
