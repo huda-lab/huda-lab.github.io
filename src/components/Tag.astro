@@ -1,14 +1,15 @@
 ---
-import areas from "../../data/areas.json";
+import areas from "../data/areas.json";
 const { id } = Astro.props;
 const tagData = Object.entries(areas).find(([key, value]) => key === id)[1];
 const color = tagData.color;
 const title = tagData.title;
 ---
 
-<a class="tag" style={{ "background-color": color }}>{title}</a>
+<div class="tag" style={{ "background-color": color }}>{title}</div>
 <style lang="scss">
   .tag {
+    display: inline;
     color: white;
     border-radius: 0.2rem;
     white-space: nowrap;

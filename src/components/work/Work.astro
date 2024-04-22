@@ -1,5 +1,5 @@
 ---
-import Paper from "./papers/Paper.astro";
+import Paper from "./Paper.astro";
 import { getCollection } from "astro:content";
 let papers = await getCollection("papers");
 papers = papers.sort((a, b) => {
@@ -21,7 +21,7 @@ papers = papers.sort((a, b) => {
         </div>
       ))
     }
-    <button type="button" id="show-more">
+    <button type="button" id="show-more" aria-label="Show more papers">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fill-rule="evenodd"
@@ -74,7 +74,7 @@ papers = papers.sort((a, b) => {
       margin-top: 1rem;
       padding: 0.5rem 1rem;
 
-    background-color: #f0f0f0;
+      background-color: #f0f0f0;
       border-radius: 0.2rem;
       color: white;
       border: none;
@@ -84,7 +84,7 @@ papers = papers.sort((a, b) => {
         height: 1rem;
       }
       &:hover {
-    background-color: #f5f5f5;
+        background-color: #f5f5f5;
         color: var(--c-link-hover);
         svg {
           fill: var(--c-link-hover);

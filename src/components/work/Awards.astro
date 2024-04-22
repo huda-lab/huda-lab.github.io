@@ -2,9 +2,9 @@
 const { list } = Astro.props;
 ---
 
-<a class="awards">
+<div class="awards">
   {list.map((a) => <div class="award">🏆 {a}</div>)}
-</a>
+</div>
 
 <style lang="scss">
   .awards {
