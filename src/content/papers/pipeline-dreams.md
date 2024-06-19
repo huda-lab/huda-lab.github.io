@@ -1,7 +1,7 @@
 ---
 title: "Pipe(line) Dreams: Fully Automated End-to-End Analysis and Visualization"
 link: "https://dl.acm.org/doi/10.1145/3665939.3665962"
-where: "HILDA"
+where: "HILDA 2024"
 when: "2024-06"
 authors: [ 
   "Cole Beasley",
