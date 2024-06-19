@@ -8,14 +8,6 @@
     "type": "PI"
   },
   {
-    "name": "Miro Mannino",
-    "title": "Research Engineer",
-    "image": "images/members/miro.jpg",
-    "email": "miro.mannino@nyu.edu",
-    "website": "https://miromannino.com/",
-    "type": "RA"
-  },
-  {
     "name": "Anh Mai",
     "title": "PhD Candidate",
     "image": "images/members/anh.jpg",
@@ -39,6 +31,28 @@
     "website": "https://www.linkedin.com/in/cole-beasley",
     "year_from": 2022,
     "type": "RA"
+  },
+  {
+    "name": "Pauline Wee",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher",
+    "image": "images/members/Pauline_Wee.jpg"
+  },
+  {
+    "name": "Filip Milisov",
+    "type": "undergrad",
+    "year_from": 2023,
+    "title": "Student Researcher"
+  },
+  {
+    "name": "Miro Mannino",
+    "title": "Research Engineer",
+    "image": "images/members/miro.jpg",
+    "email": "miro.mannino@nyu.edu",
+    "website": "https://miromannino.com/",
+    "type": "RA",
+    "year_to": 2023
   },
   {
     "name": "Zain Tariq",
@@ -200,16 +214,10 @@
     "title": "Student Researcher"
   },
   {
-    "name": "Pauline Wee",
-    "type": "undergrad",
-    "year_from": 2023,
-    "title": "Student Researcher",
-    "image": "images/members/Pauline_Wee.jpg"
-  },
-  {
     "name": "Shawn Nassabi",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2023,
     "title": "Student Researcher",
     "image": "images/members/Shawn_Nassabi.jpg"
   },
@@ -217,6 +225,7 @@
     "name": "Swostik Pati",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2023,
     "title": "Student Researcher",
     "image": "images/members/Swostik_Pati.jpg"
   },
@@ -224,6 +233,7 @@
     "name": "Linh Tran",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2023,
     "title": "Student Researcher",
     "image": "images/members/Linh_Tran.jpg"
   },
@@ -231,6 +241,7 @@
     "name": "Nghia Nim",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2023,
     "title": "Student Researcher",
     "image": "images/members/Nghia_Nim.jpg"
   }
