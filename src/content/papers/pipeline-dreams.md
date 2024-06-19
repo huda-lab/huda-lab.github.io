@@ -7,7 +7,7 @@ authors: [
   "Cole Beasley",
   "Azza Abouzied"
 ]
-tags: ["dm", "powerup"]
+tags: ["powerup"]
 links: [
   {
     txt: "Paper",
