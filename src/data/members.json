@@ -21,6 +21,7 @@
     "type": "phd",
     "image": "images/members/junior.jpg",
     "email": "jfg388@nyu.edu",
+    "year_to": 2024,
     "website": "https://www.juniorfranciscogarcia.com"
   },
   {
@@ -36,6 +37,7 @@
     "name": "Pauline Wee",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2024,
     "title": "Student Researcher",
     "image": "images/members/Pauline_Wee.jpg"
   },
@@ -43,7 +45,7 @@
     "name": "Filip Milisov",
     "type": "undergrad",
     "year_from": 2023,
-    "title": "Student Researcher",
+    "title": "Research Assistant",
     "image" : "images/members/filip.jpg"
   },
   {
@@ -54,6 +56,14 @@
     "website": "https://miromannino.com/",
     "type": "RA",
     "year_to": 2023
+  },
+  {
+    "name": "Wuyeh Jobe",
+    "title": "Research Engineer",
+    "image": "images/members/wuyeh.jpg",
+    "email": "wj2331@nyu.edu",
+    "type": "RA",
+    "year_from": 2025
   },
   {
     "name": "Zain Tariq",
