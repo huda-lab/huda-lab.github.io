@@ -1,0 +1,286 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Blog posts data
+const blogPosts = [
+  {
+    title: "The Gallium Nitride (GaN) Revolution: Efficiency, Physics, and Market Impact",
+    excerpt: "Discover how GaN semiconductors are replacing silicon in power electronics, offering 3x higher power density and 40% greater energy efficiency. Learn about the physics behind wide-bandgap technology and its environmental impact.",
+    date: "2025-02-01",
+    author: "Cuda",
+    tags: ["semiconductors", "physics", "energy efficiency", "technology"],
+    status: "Published",
+    url: "/gan-revolution"
+  },
+  {
+    title: "Understanding The Echo-Symmetry Bias in Remote Teams",
+    excerpt: "A cognitive distortion where remote employees subconsciously mirror the communication latency of their managers, resulting in artificial productivity slowdowns. Learn how this bias increases project completion times by 18.4% and how to break the loop.",
+    date: "2025-02-01",
+    author: "Cuda",
+    tags: ["remote work", "productivity", "behavioral science"],
+    status: "Published",
+    url: "/echo-symmetry-bias"
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Blog posts and insights from the team" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Contents - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="container">
+        <h1>Contents</h1>
+        <p class="subtitle">Blog posts and insights from the team</p>
+        
+        <div class="blog-list">
+          <div class="blog-grid">
+            {blogPosts.map(post => (
+              <article class="blog-card">
+                <div class="blog-header">
+                  <h3 class="blog-title">
+                    {post.url ? (
+                      <a href={post.url}>{post.title}</a>
+                    ) : (
+                      post.title
+                    )}
+                  </h3>
+                  <div class={`status-badge ${post.status === 'Published' ? 'published' : ''}`}>
+                    {post.status}
+                  </div>
+                </div>
+                
+                <div class="blog-excerpt">
+                  {post.excerpt}
+                </div>
+                
+                <div class="blog-meta">
+                  <p class="date">{post.date}</p>
+                  <p class="author">By {post.author}</p>
+                </div>
+                
+                {post.tags && (
+                  <div class="tags">
+                    {post.tags.map(tag => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+                
+                <div class="blog-actions">
+                  {post.url ? (
+                    <a href={post.url} class="read-more-btn">
+                      Read More
+                    </a>
+                  ) : (
+                    <button class="read-more-btn" disabled>
+                      Coming Soon
+                    </button>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+    
+    <style lang="scss">
+      body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+      main {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+      }
+      
+      .container {
+        width: 100%;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 3rem;
+      }
+      
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .blog-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+      }
+      
+      .blog-header {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .blog-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+        color: #333;
+        flex: 1;
+        
+        a {
+          color: #333;
+          text-decoration: none;
+          
+          &:hover {
+            color: #2c5aa0;
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      .status-badge {
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: #ff6b35;
+        color: white;
+      }
+      
+      .status-badge.published {
+        background: #28a745;
+      }
+      
+      .blog-excerpt {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+      
+      .blog-meta {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+      
+      .date {
+        font-weight: 600;
+        color: #555;
+      }
+      
+      .author {
+        font-style: italic;
+      }
+      
+      .tags {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+      }
+      
+      .tag {
+        background: #f0f0f0;
+        color: #555;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+      }
+      
+      .blog-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .read-more-btn {
+        background: #2c5aa0;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        
+        &:hover:not(:disabled) {
+          background: #1e3f6b;
+        }
+        
+        &:disabled {
+          background: #ccc;
+          cursor: not-allowed;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        main {
+          padding: 1rem;
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+        
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .blog-card {
+          padding: 1rem;
+        }
+        
+        .blog-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+      }
+    </style>
+  </body>
+</html> 
