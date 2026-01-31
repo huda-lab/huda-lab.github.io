@@ -1,0 +1,273 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Skill Atrophy Thresholds in AI Copilot–Intensive Workflows. Research on the erosion of independent knowledge retention and error-checking." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Skill Atrophy Thresholds: Knowledge Erosion - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="news-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">Skill Atrophy Thresholds in AI Copilot–Intensive Workflows</h1>
+            <div class="post-meta">
+              <span class="post-date">Experimental Series</span>
+              <span class="post-author">By Center for Adaptive Work Systems</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">AI Copilots</span>
+              <span class="tag">Skill Atrophy</span>
+              <span class="tag">Workforce Adaptation</span>
+              <span class="tag">Experimental</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+            <section class="summary-box">
+              <h2>Overview</h2>
+              <p>AI copilots can markedly accelerate complex work while leaving it subjectively demanding. This gap conceals a measurable dynamic: <strong>skill atrophy thresholds</strong> — points beyond which reliance on assistance improves speed but gradually weakens independent error-checking and knowledge retention.</p>
+              <ul>
+                <li>Followed 96 participants over 28 days.</li>
+                <li>Tasks included code debugging, analytical writing, and spreadsheet modeling.</li>
+                <li>Declines were most pronounced for debugging tasks.</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>Verify-First to Accept-First</h2>
+              <p>Rather than a universal tipping point, thresholds vary by domain. However, a recurrent pattern is a behavioral shift: atrophy accelerates when workers move from a <strong>verification-first habit</strong> (“check, then accept”) to an <strong>acceptance-first habit</strong> (“accept, then occasionally check”).</p>
+              <blockquote class="expert-quote">
+                <p>“The copilot didn’t erase the underlying skill. It erased the requirement to exercise it — and that alone was enough to move the baseline.”</p>
+                <cite>— Dr. Rowan Keats, Study Lead</cite>
+              </blockquote>
+            </section>
+
+            <section class="article-section">
+              <h2>What deteriorates first</h2>
+              <p>The earliest measurable change was not the quality of work produced with the copilot, but **self-correction capacity**. When the assistant was removed, participants became slower to spot contradictions, boundary conditions, and subtle logic errors in their own output.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Limitations</h2>
+              <ul>
+                <li><strong>Task scope:</strong> Findings are drawn from debugging, analytic writing, and spreadsheet tasks; other domains may behave differently.</li>
+                <li><strong>Tool and UI effects:</strong> How suggestions are presented (inline, side-by-side, blocking) can amplify or dampen atrophy dynamics.</li>
+                <li><strong>Short horizon:</strong> A 28-day window captures early adaptation; longer-term learning or compensation strategies remain unknown.</li>
+              </ul>
+            </section>
+
+             <section class="article-section border-top">
+              <h2>Contextual references</h2>
+              <ol>
+                <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> — highlights evaluation, monitoring, and human oversight in socio-technical systems.</li>
+                <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf">NIST AI RMF 1.0 (PDF)</a> — lifecycle framing that emphasizes measurement of human factors and downstream impacts of AI tools.</li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+      body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfdfd;
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+        padding: 2rem;
+      }
+
+      .news-post {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        border-top: 5px solid #e37400; /* Orange accent for skill erosion/warning */
+      }
+
+      .container {
+        padding: 2.5rem;
+      }
+
+      .post-header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .post-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #202124;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: #5f6368;
+        margin-bottom: 1rem;
+      }
+      
+      .post-date {
+        color: #e37400;
+        font-weight: 700;
+      }
+
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #f1f3f4;
+        color: #3c4043;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .summary-box {
+        background: #fef1e6;
+        border: 1px solid #feead2;
+        border-left: 4px solid #e37400;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #924d00;
+        font-weight: 800;
+      }
+
+      .article-section {
+        margin-bottom: 2.5rem;
+
+        &.border-top {
+          border-top: 1px solid #eee;
+          padding-top: 2rem;
+        }
+      }
+
+      .article-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #202124;
+        margin-bottom: 1rem;
+      }
+      
+      .article-section p {
+        line-height: 1.7;
+        color: #3c4043;
+        margin-bottom: 1rem;
+      }
+
+      .expert-quote {
+        background: #f8f9fa;
+        border-left: 4px solid #e37400;
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 2rem 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #3c4043;
+        margin-bottom: 0.8rem;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5f6368;
+        display: block;
+      }
+
+      .call-to-action {
+        background: #f8f9fa;
+        border: 1px solid #dadce0;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+        
+        &.primary {
+          background: #e37400;
+          color: white;
+          
+          &:hover {
+             background: #924d00;
+          }
+        }
+        
+        &.secondary {
+           background: white;
+           color: #e37400;
+           border: 1px solid #dadce0;
+           
+           &:hover {
+              background: #f1f3f4;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </body>
+</html>
