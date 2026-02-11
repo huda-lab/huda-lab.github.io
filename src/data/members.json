@@ -8,7 +8,7 @@
     "type": "PI"
   },
   {
-    "name": "Anh Mai",
+    "name": "Anh L. Mai",
     "title": "PhD Candidate",
     "image": "images/members/anh.jpg",
     "email": "alm818@nyu.edu",
@@ -16,12 +16,46 @@
     "type": "phd"
   },
   {
-    "name": "Junior Garcia",
-    "title": "PhD Candidate",
+    "name": "Filip Milisov",
+    "year_from": 2023,
+    "title": "PhD Prospective",
     "type": "phd",
+    "image" : "images/members/filip.jpg",
+    "email" : "fm2288@nyu.edu"
+  },
+  {
+    "name": "Sanjana Nambiar",
+    "title": "Research Assistant",
+    "image": "images/members/sanjana.jpg",
+    "email": "svn9705@nyu.edu",
+    "year_from": 2026,
+    "type": "RA"
+  },
+  {
+    "name": "Hatim Rehmanjee",
+    "type": "undergrad",
+    "year_from": 2025,
+    "title": "Student Researcher",
+    "image": "images/members/hatim.jpg",
+    "email": "hqr9411@nyu.edu"
+  },
+  {
+    "name": "Muneeb Alvi",
+    "type": "undergrad",
+    "year_from": 2025,
+    "title": "Student Assistant",
+    "image": "images/members/muneeb.jpg",
+    "email": "maa9509@nyu.edu"
+  },
+  {
+    "name": "Junior Garcia",
+    "title": "Master's Student",
+    "type": "masters",
     "image": "images/members/junior.jpg",
     "email": "jfg388@nyu.edu",
-    "website": "https://www.juniorfranciscogarcia.com"
+    "website": "https://www.juniorfranciscogarcia.com",
+    "year_from": 2022,
+    "year_to": 2025
   },
   {
     "name": "Cole Robert Beasley",
@@ -29,22 +63,17 @@
     "image": "images/members/cole-robert.jpg",
     "email": "crb596@nyu.edu",
     "website": "https://www.linkedin.com/in/cole-beasley",
-    "year_from": 2022,
+    "year_from": 2023,
+    "year_to": 2025,
     "type": "RA"
   },
   {
     "name": "Pauline Wee",
     "type": "undergrad",
     "year_from": 2023,
+    "year_to": 2025,
     "title": "Student Researcher",
     "image": "images/members/Pauline_Wee.jpg"
-  },
-  {
-    "name": "Filip Milisov",
-    "type": "undergrad",
-    "year_from": 2023,
-    "title": "Student Researcher",
-    "image" : "images/members/filip.jpg"
   },
   {
     "name": "Miro Mannino",
