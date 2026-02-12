@@ -24,6 +24,14 @@
     "email" : "fm2288@nyu.edu"
   },
   {
+    "name": "Wuyeh Jobe",
+    "title": "Research Engineer",
+    "image": "images/members/wuyeh.jpg",
+    "email": "wj2331@nyu.edu",
+    "type": "RA",
+    "year_from": 2025
+  },
+  {
     "name": "Sanjana Nambiar",
     "title": "Research Assistant",
     "image": "images/members/sanjana.jpg",
@@ -83,14 +91,6 @@
     "website": "https://miromannino.com/",
     "type": "RA",
     "year_to": 2023
-  },
-  {
-    "name": "Wuyeh Jobe",
-    "title": "Research Engineer",
-    "image": "images/members/wuyeh.jpg",
-    "email": "wj2331@nyu.edu",
-    "type": "RA",
-    "year_from": 2025
   },
   {
     "name": "Zain Tariq",
