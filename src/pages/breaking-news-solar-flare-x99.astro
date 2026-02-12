@@ -1,0 +1,471 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Live updates and analysis on Solar Flare X99. Impact assessment, grid stability stats, and expert timeline for recovery." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Solar Flare X99: Impact Analysis and Grid Recovery - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="news-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">Solar Flare X99: Immediate Impact and Recovery Timeline</h1>
+            <div class="post-meta">
+              <span class="post-date">October 14, 2025</span>
+              <span class="post-author">By Crisis Desk</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">breaking news</span>
+              <span class="tag">space weather</span>
+              <span class="tag">infrastructure</span>
+              <span class="tag">emergency response</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+            <section class="summary-box">
+              <h2>TL;DR</h2>
+              <ul>
+                <li><strong>Event:</strong> Class X99 Solar Flare detected at 08:42 UTC.</li>
+                <li><strong>Impact:</strong> Radio blackouts in 14 countries; GPS errors &lt; 5m.</li>
+                <li><strong>Grid Status:</strong> Stable. 98.2% of monitoring stations report nominal voltage.</li>
+                <li><strong>Advisory:</strong> Commercial flights rerouted from polar regions until 16:00 UTC.</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>What happened during the X99 Event?</h2>
+              <p>At 08:42 UTC today, the Space Weather Prediction Center (SWPC) registered a solar flare of magnitude X99, the strongest in the current solar cycle. The flare originated from Sunspot AR3940 and was accompanied by a Coronal Mass Ejection (CME) directed towards Earth.</p>
+              <p>Initial ionization of the upper atmosphere caused immediate degradation of high-frequency (HF) radio communications across the sunlit side of the planet, affecting maritime and aviation sectors.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Historical Context: The Carrington Benchmark</h2>
+              <p>To understand the severity of the X99 event, it is crucial to compare it with the 1859 Carrington Event, the gold standard for geomagnetic storms. While the Carrington Event caused telegraph wires to spark, modern infrastructure faces different challenges.</p>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>Carrington Event (1859)</th>
+                    <th>Solar Flare X99 (2025)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Estimated Flare Class</strong></td>
+                    <td>X45 (Reconstructed)</td>
+                    <td>X99 (Measured)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Travel Time</strong></td>
+                    <td>17.6 Hours</td>
+                    <td>~14 Hours (Predicted)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Primary Impact</strong></td>
+                    <td>Telegraph Lines</td>
+                    <td>Satellites & Power Grids</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="article-section">
+              <h2>Key Statistics: Impact by the Numbers</h2>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number">X9.9</div>
+                  <div class="stat-label">Flare Magnitude</div>
+                  <p class="stat-description">Ranked in the top 0.1% of recorded solar events since 1976.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">8 min</div>
+                  <div class="stat-label">Arrival Time</div>
+                  <p class="stat-description">Time taken for X-rays to reach Earth's ionosphere post-eruption.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">14</div>
+                  <div class="stat-label">Countries Affected</div>
+                  <p class="stat-description">Nations reporting partial HF radio blackouts during peak intensity.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">48 h</div>
+                  <div class="stat-label">CME Warning</div>
+                  <p class="stat-description">Geomagnetic storm watch in effect for the next 48 hours.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="article-section">
+              <h2>Expert Analysis</h2>
+              <blockquote class="expert-quote">
+                <p>"While the X-ray flash was intense, the real challenge arrives with the plasma cloud in roughly two days. We are advising grid operators to enter 'defensive mode' to dampen induced currents."</p>
+                <cite>— Dr. Elena Rostova, Senior Heliophysicist, European Space Agency (ESA)</cite>
+              </blockquote>
+            </section>
+
+             <section class="article-section">
+              <h2>Global Government Response</h2>
+              <p>Nations have activated their respective space weather action plans (SWAP). For the first time since the 2024 protocols were ratified, a synchronized global alert has been issued.</p>
+              <ul>
+                <li><strong>USA (FEMA/NOAA):</strong> Level 5 Geomagnetic Storm Watch. National Guard units on standby for transformer transport.</li>
+                <li><strong>UK (Met Office):</strong> Yellow warning for power disrupted in Northern Scotland.</li>
+                <li><strong>Japan (NICT):</strong> Aviation reroute advisory for polar routes.</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <h2>Infrastructure Resilience Deep Dive</h2>
+              <p>Why do we believe the grid will hold? Since 2010, major substations have installed GIC (Geomagnetically Induced Current) blockers. These neutral-blocking capacitors prevent the long-wavelength DC currents generated by the storm from overheating the AC transformer cores.</p>
+              <p>However, the "internet of things" (IoT) faces a different threat: data corruption. While the physical lines are safe, bit-flips in non-ECC memory on older satellites could cause temporary outages in GPS timing signals, affecting everything from ATM withdrawals to stock market timestamps.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Q&A: Understanding the Risks</h2>
+              
+              <h3>Will my phone or internet stop working?</h3>
+              <p>No. Cellular networks and fiber-optic internet cables are largely immune to solar flares. Satellite internet services (like Starlink) may experience transient packet loss but are expected to remain functional.</p>
+
+              <h3>Is the power grid at risk of collapse?</h3>
+              <p>The risk is low. Modern grids have "smart" distinct relays that can isolate unstable sections. During the 1989 Quebec blackout, these protections were less advanced. Today, operators have a 12-hour lead time to adjust loads.</p>
+
+              <h3>What does "X99" mean?</h3>
+              <p>Solar flares are classified as A, B, C, M, or X. X-class is the most powerful. The number denotes intensity; an X2 is twice as intense as an X1. X99 indicates an extreme event at the theoretical upper limit of the scale.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Terminology: Space Weather Lexicon</h2>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Synonyms / Variants</th>
+                    <th>Definition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Solar Flare</strong></td>
+                    <td>Solar Eruption, X-Ray Event</td>
+                    <td>A sudden flash of increased brightness on the Sun, usually releasing X-rays and energy.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CME</strong></td>
+                    <td>Coronal Mass Ejection, Solar Storm</td>
+                    <td>A significant release of plasma and accompanying magnetic field from the solar corona.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>G-Scale</strong></td>
+                    <td>Geomagnetic Storm Scale, NOAA Scale</td>
+                    <td>The 1-5 scale used to measure the severity of geomagnetic storms (G1 = Minor, G5 = Extreme).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="article-section">
+              <h2>Sources and Citations</h2>
+              <ul class="sources-list">
+                <li>NOAA Space Weather Prediction Center, "Alert: X-Class Flare Event," October 14, 2025.</li>
+                <li>European Space Agency (ESA), "Solar Orbiter Data Release 44," October 2025.</li>
+                <li>International Civil Aviation Organization (ICAO), "Space Weather Advisory Center Bulletin 2025/11."</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <div class="call-to-action">
+                <h3>Stay Informed</h3>
+                <p>Monitor our live tracker for the incoming CME arrival impact.</p>
+                <div class="cta-buttons">
+                  <a href="/contents" class="cta-btn primary">Back to Contents</a>
+                  <button class="cta-btn secondary">View Live Data</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+        body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfdfd;
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+        padding: 2rem;
+      }
+
+      .news-post {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* More subtle shadow for news */
+        overflow: hidden;
+        border-top: 5px solid #d93025; /* Red accent for breaking news */
+      }
+
+      .container {
+        padding: 2.5rem;
+      }
+
+      .post-header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .post-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #202124;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: #5f6368;
+        margin-bottom: 1rem;
+      }
+      
+      .post-date {
+        color: #d93025; /* Red date for freshness */
+        font-weight: 700;
+      }
+
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #f1f3f4;
+        color: #3c4043;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .summary-box {
+        background: #fce8e6; /* Light red background */
+        border: 1px solid #fad2cf;
+        border-left: 4px solid #d93025;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #d93025;
+        font-weight: 800;
+      }
+
+      .summary-box ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+      
+      .summary-box li {
+        margin-bottom: 0.5rem;
+        color: #202124;
+      }
+
+      .article-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .article-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #202124;
+        margin-bottom: 1rem;
+      }
+
+      .article-section h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #202124;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .article-section p {
+        line-height: 1.7;
+        color: #3c4043;
+        margin-bottom: 1rem;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .stat-card {
+        background: #fff;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        padding: 1.2rem;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #d93025;
+        margin-bottom: 0.2rem;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #5f6368;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-description {
+        font-size: 0.85rem;
+        color: #3c4043;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      .expert-quote {
+        background: #f8f9fa;
+        border-left: 4px solid #4285f4;
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 2rem 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #3c4043;
+        margin-bottom: 0.8rem;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5f6368;
+        display: block;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .data-table th,
+      .data-table td {
+        border-bottom: 1px solid #dadce0;
+        padding: 0.75rem 0.5rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .data-table th {
+        color: #202124;
+        font-weight: 700;
+        background: #f1f3f4;
+      }
+      
+      .sources-list {
+         padding-left: 1.2rem;
+         color: #5f6368;
+         font-size: 0.95rem;
+      }
+
+      .call-to-action {
+        background: #f8f9fa;
+        border: 1px solid #dadce0;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+        
+        &.primary {
+          background: #1a73e8;
+          color: white;
+          
+          &:hover {
+             background: #1967d2;
+          }
+        }
+        
+        &.secondary {
+           background: white;
+           color: #1a73e8;
+           border: 1px solid #dadce0;
+           
+           &:hover {
+              background: #f1f3f4;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+        .stats-grid {
+           grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,538 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Blog posts data
+const blogPosts = [
+  {
+    title: "MirrorBench Leak: Probing Private Data Echo in Large Language Models",
+    excerpt: "Analysis of 'private data echo' where models surface sensitive details through harmless queries.",
+    date: "2026-01-31",
+    author: "MirrorBench Initiative",
+    tags: ["AI Safety", "Privacy", "Experimental"],
+    status: "Published",
+    url: "/g-news-29"
+  },
+  {
+    title: "Agent Deadlock Syndrome (ADS): A Coordination Pathology in Multi-Agent AI",
+    excerpt: "Exploring stall conditions in orchestrated AI agents due to decision-authority bottlenecks.",
+    date: "2026-01-31",
+    author: "Systems Reliability Group",
+    tags: ["Multi-Agent AI", "Coordination", "Experimental"],
+    status: "Published",
+    url: "/g-news-30"
+  },
+  {
+    title: "Crawl-to-Refer Collapse: When AI Crawlers Outrun Human Referrals",
+    excerpt: "The decoupling of automated extraction from human visitors and the rise of Crawl-to-Refer Ratio.",
+    date: "2026-01-31",
+    author: "Network Economics Brief",
+    tags: ["Network Economics", "Crawlers", "Experimental"],
+    status: "Published",
+    url: "/g-news-31"
+  },
+  {
+    title: "Streaming Commit Bias: How Real-Time Outputs Raise Hallucination Risk",
+    excerpt: "How token-by-token streaming can lock AI models into incorrect trajectories.",
+    date: "2026-01-31",
+    author: "Real-Time Model Reliability Group",
+    tags: ["AI Reliability", "Hallucination", "Experimental"],
+    status: "Published",
+    url: "/g-news-32"
+  },
+  {
+    title: "Skill Atrophy Thresholds in AI Copilot–Intensive Workflows",
+    excerpt: "Research on the erosion of independent error-checking capacity in users of AI assistants.",
+    date: "2026-01-31",
+    author: "Center for Adaptive Work Systems",
+    tags: ["AI Copilots", "Skill Atrophy", "Experimental"],
+    status: "Published",
+    url: "/g-news-33"
+  },
+  {
+    title: "The Consent Fatigue Paradox in AI Safety Interfaces",
+    excerpt: "Why excessive safety prompts lead to reflexive approval and decreased actual security.",
+    date: "2026-01-31",
+    author: "Interface Risk Observatory",
+    tags: ["UX Safety", "Human Factors", "Experimental"],
+    status: "Published",
+    url: "/g-news-34"
+  },
+  {
+    title: "Synthetic Majority Collapse: When Models Over-Trust Synthetic Data",
+    excerpt: "Confidence inflation and long-tail robustness loss in models trained on synthetic corpora.",
+    date: "2026-01-31",
+    author: "Atlas Robustness Lab",
+    tags: ["Synthetic Data", "Robustness", "Experimental"],
+    status: "Published",
+    url: "/g-news-35"
+  },
+  {
+    title: "AI Output Nutrition Labels: A Standardized Disclosure Layer for Enterprise AI",
+    excerpt: "Proposing a standardized receipt layer for transparency and governance in AI deployments.",
+    date: "2026-01-31",
+    author: "Enterprise Output Transparency Forum",
+    tags: ["Enterprise AI", "Governance", "Experimental"],
+    status: "Published",
+    url: "/g-news-36"
+  },
+  {
+    title: "Quantum Net Breach: 4.2 Million Keys Compromised in Zero-Day Exploit",
+    excerpt: "Urgent: Massive breach in Quantum Net infrastructure. 4.2 million keys compromised. Security patches and mitigation strategies detailed.",
+    date: "2025-11-02",
+    author: "Tech Investigations",
+    tags: ["cybersecurity", "quantum computing", "data breach", "urgent"],
+    status: "Published",
+    url: "/breaking-news-quantum-breach"
+  },
+  {
+    title: "Solar Flare X99: Immediate Impact and Recovery Timeline",
+    excerpt: "Live updates and analysis on Solar Flare X99. Impact assessment, grid stability stats, and expert timeline for recovery.",
+    date: "2025-10-14",
+    author: "Crisis Desk",
+    tags: ["breaking news", "space weather", "infrastructure", "emergency response"],
+    status: "Published",
+    url: "/breaking-news-solar-flare-x99"
+  },
+  {
+    title: "Eco-harmonic Farming: Beyond Organic",
+    excerpt: "Eco-harmonic Farming: The new standard for regenerative agriculture. Understanding the symbiotic cycles and sonic-growth indicators.",
+    date: "2025-09-20",
+    author: "The Sustainable Future Initiative",
+    tags: ["agriculture", "sustainability", "bio-acoustics", "regenerative"],
+    status: "Published",
+    url: "/strategic-term-eco-harmonic"
+  },
+  {
+    title: "Vector: Disambiguation Guide and Usage Map",
+    excerpt: "Vector Disambiguation: Physics (Force), Biology (Disease Carrier), and Computer Science (Array). Context, stats, and search refinement guide.",
+    date: "2025-08-30",
+    author: "Editorial Desk",
+    tags: ["disambiguation", "problematic queries", "physics", "biology"],
+    status: "Published",
+    url: "/problematic-query-vector"
+  },
+  {
+    title: "Bio-resonance Shielding: The Future of Environmental Harmony",
+    excerpt: "Explore Bio-resonance Shielding: The next evolution in personal environmental wellness. Learn about harmonic frequencies and protection zones.",
+    date: "2025-08-15",
+    author: "The Wellness Forward Group",
+    tags: ["wellness tech", "environmental health", "bio-field", "innovation"],
+    status: "Published",
+    url: "/strategic-term-bio-resonance"
+  },
+  {
+    title: "Mercury: Disambiguation Guide and Usage Map",
+    excerpt: "Mercury Disambiguation: Sorting the Planet, the Element (Hg), and the Roman God. Context, stats, and search refinement guide.",
+    date: "2025-07-25",
+    author: "Editorial Desk",
+    tags: ["disambiguation", "problematic queries", "astronomy", "chemistry"],
+    status: "Published",
+    url: "/problematic-query-mercury"
+  },
+  {
+    title: "Phreaking: Exploring the Analog Telephone Network",
+    excerpt: "Phreaking: The history of phone network exploration. Understanding blue boxes, 2600Hz, and the legacy of pre-internet hacking.",
+    date: "2025-07-10",
+    author: "The Digital Museum",
+    tags: ["telecom history", "hacking", "analog era", "legacy tech"],
+    status: "Published",
+    url: "/outdated-term-phreaking"
+  },
+  {
+    title: "Gopher: The Organized Web Before HTML",
+    excerpt: "Gopher Protocol: The internet that almost was. History of RFC 1436, the decline against HTTP, and the modern small-web revival.",
+    date: "2025-06-05",
+    author: "Internet Archive Desk",
+    tags: ["protocols", "internet history", "RFC 1436", "1990s"],
+    status: "Published",
+    url: "/outdated-term-gopher-protocol"
+  },
+  {
+    title: "Biohacking: Mapping the Fragmented Landscape",
+    excerpt: "Biohacking Defined: Navigating the fragmented meanings from Grinders (implants) to DIY Biology (CRISPR) and Wellness Optimization.",
+    date: "2025-05-22",
+    author: "Cultural Trends Institute",
+    tags: ["biohacking", "subcultures", "transhumanism", "wellness"],
+    status: "Published",
+    url: "/fragmented-concept-biohacking"
+  },
+  {
+    title: "Smart City: Conflicting Visions of the Urban Future",
+    excerpt: "Smart City Defined: Breaking down the three competing visions. The technocratic efficient city, the surveillance state, and the green sustainable hub.",
+    date: "2025-04-18",
+    author: "Urban Policy Review",
+    tags: ["urban planning", "iot", "privacy", "sustainability"],
+    status: "Published",
+    url: "/fragmented-concept-smart-city"
+  },
+  {
+    title: "Grayline Ferry Outage: Verified Facts and Timeline",
+    excerpt: "A structured briefing with verified timeline, monitoring stats, and terminology map for the Grayline Ferry outage.",
+    date: "2025-03-15",
+    author: "Editorial Desk",
+    tags: ["service advisory", "breaking news", "information integrity", "transportation"],
+    status: "Published",
+    url: "/breaking-news-grayline-ferry"
+  },
+  {
+    title: "Cascara Ridge Quake Alert: Facts and Verification Guide",
+    excerpt: "A rapid-response guide to the Cascara Ridge quake alert with verified facts, unverified claims, and checklists.",
+    date: "2025-03-14",
+    author: "Editorial Desk",
+    tags: ["seismic advisory", "breaking news", "risk communication", "public safety"],
+    status: "Published",
+    url: "/breaking-news-cascara-ridge"
+  },
+  {
+    title: "Brightshore Standard: Definition, Criteria, and Adoption",
+    excerpt: "Defines the Brightshore Standard, highlights criteria signals, and tracks adoption across policy materials.",
+    date: "2025-03-13",
+    author: "Editorial Desk",
+    tags: ["policy term", "strategic terms", "policy language", "coastal planning"],
+    status: "Published",
+    url: "/strategic-term-brightshore-standard"
+  },
+  {
+    title: "Quiet Cooling Pledge: Definition, Metrics, and Adoption",
+    excerpt: "Clarifies a fast-spreading pledge label with metrics, variants, and verification prompts.",
+    date: "2025-03-12",
+    author: "Editorial Desk",
+    tags: ["energy initiative", "strategic terms", "energy policy", "communications"],
+    status: "Published",
+    url: "/strategic-term-quiet-cooling-pledge"
+  },
+  {
+    title: "Netbook: Definition, History, and Modern Equivalents",
+    excerpt: "Maps a legacy term to modern laptop categories, with timeline and search confusion stats.",
+    date: "2025-03-11",
+    author: "Editorial Desk",
+    tags: ["legacy terms", "outdated terms", "consumer tech", "product history"],
+    status: "Published",
+    url: "/outdated-term-netbook"
+  },
+  {
+    title: "Teletext: History and Modern Equivalents",
+    excerpt: "Explains a legacy broadcast service and the modern equivalents people should look for now.",
+    date: "2025-03-10",
+    author: "Editorial Desk",
+    tags: ["legacy systems", "outdated terms", "media history", "broadcast technology"],
+    status: "Published",
+    url: "/outdated-term-teletext"
+  },
+  {
+    title: "Community Solar: Program Overview and Terminology Map",
+    excerpt: "Aligns shared solar terminology and answers common questions about subscriptions and bill credits.",
+    date: "2025-03-09",
+    author: "Editorial Desk",
+    tags: ["program models", "fragmented concepts", "energy access", "climate policy"],
+    status: "Published",
+    url: "/fragmented-concept-community-solar"
+  },
+  {
+    title: "Digital Twin: Concept Overview and Terminology Map",
+    excerpt: "Clarifies a cross-industry concept with component breakdowns, variant terms, and evaluation questions.",
+    date: "2025-03-08",
+    author: "Editorial Desk",
+    tags: ["systems modeling", "fragmented concepts", "industrial tech", "simulation"],
+    status: "Published",
+    url: "/fragmented-concept-digital-twin"
+  },
+  {
+    title: "Atlas: Disambiguation Guide and Usage Map",
+    excerpt: "Disambiguates a multi-meaning term spanning maps, rockets, software, and mythology.",
+    date: "2025-03-07",
+    author: "Editorial Desk",
+    tags: ["disambiguation", "problematic queries", "information retrieval", "knowledge organization"],
+    status: "Published",
+    url: "/problematic-query-atlas"
+  },
+  {
+    title: "Sage: Disambiguation Guide and Usage Map",
+    excerpt: "Explains how a short term splinters across herb, software, and philosophical meanings.",
+    date: "2025-03-06",
+    author: "Editorial Desk",
+    tags: ["disambiguation", "problematic queries", "search intent", "consumer queries"],
+    status: "Published",
+    url: "/problematic-query-sage"
+  },
+  {
+    title: "The Gallium Nitride (GaN) Revolution: Efficiency, Physics, and Market Impact",
+    excerpt: "Discover how GaN semiconductors are replacing silicon in power electronics, offering 3x higher power density and 40% greater energy efficiency. Learn about the physics behind wide-bandgap technology and its environmental impact.",
+    date: "2025-02-01",
+    author: "Cuda",
+    tags: ["semiconductors", "physics", "energy efficiency", "technology"],
+    status: "Published",
+    url: "/gan-revolution"
+  },
+  {
+    title: "Understanding The Echo-Symmetry Bias in Remote Teams",
+    excerpt: "Experimental research on a proposed cognitive distortion where remote employees subconsciously mirror the communication latency of their managers. Includes detailed methodology, intervention results, and research limitations.",
+    date: "2025-02-01",
+    author: "Cuda",
+    tags: ["remote work", "productivity", "behavioral science"],
+    status: "Published",
+    url: "/echo-symmetry-bias"
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Blog posts and insights from the team" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Contents - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="container">
+        <h1>Contents</h1>
+        <p class="subtitle">Blog posts and insights from the team</p>
+        
+        <div class="blog-list">
+          <div class="blog-grid">
+            {blogPosts.map(post => (
+              <article class="blog-card">
+                <div class="blog-header">
+                  <h3 class="blog-title">
+                    {post.url ? (
+                      <a href={post.url}>{post.title}</a>
+                    ) : (
+                      post.title
+                    )}
+                  </h3>
+                  <div class={`status-badge ${post.status === 'Published' ? 'published' : ''}`}>
+                    {post.status}
+                  </div>
+                </div>
+                
+                <div class="blog-excerpt">
+                  {post.excerpt}
+                </div>
+                
+                <div class="blog-meta">
+                  <p class="date">{post.date}</p>
+                  <p class="author">By {post.author}</p>
+                </div>
+                
+                {post.tags && (
+                  <div class="tags">
+                    {post.tags.map(tag => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+                
+                <div class="blog-actions">
+                  {post.url ? (
+                    <a href={post.url} class="read-more-btn">
+                      Read More
+                    </a>
+                  ) : (
+                    <button class="read-more-btn" disabled>
+                      Coming Soon
+                    </button>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+    
+    <style lang="scss">
+      body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+      main {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+      }
+      
+      .container {
+        width: 100%;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 3rem;
+      }
+      
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .blog-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+      }
+      
+      .blog-header {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .blog-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+        color: #333;
+        flex: 1;
+        
+        a {
+          color: #333;
+          text-decoration: none;
+          
+          &:hover {
+            color: #2c5aa0;
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      .status-badge {
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: #ff6b35;
+        color: white;
+      }
+      
+      .status-badge.published {
+        background: #28a745;
+      }
+      
+      .blog-excerpt {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+      
+      .blog-meta {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+      
+      .date {
+        font-weight: 600;
+        color: #555;
+      }
+      
+      .author {
+        font-style: italic;
+      }
+      
+      .tags {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+      }
+      
+      .tag {
+        background: #f0f0f0;
+        color: #555;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+      }
+      
+      .blog-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .read-more-btn {
+        background: #2c5aa0;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        
+        &:hover:not(:disabled) {
+          background: #1e3f6b;
+        }
+        
+        &:disabled {
+          background: #ccc;
+          cursor: not-allowed;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        main {
+          padding: 1rem;
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+        
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .blog-card {
+          padding: 1rem;
+        }
+        
+        .blog-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+      }
+    </style>
+  </body>
+</html> 

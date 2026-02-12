@@ -1,0 +1,472 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Urgent: Massive breach in Quantum Net infrastructure. 4.2 million keys compromised. Security patches and mitigation strategies detailed." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Quantum Net Breach: Security Alert and Patch Status - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="news-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">Quantum Net Breach: 4.2 Million Keys Compromised in Zero-Day Exploit</h1>
+            <div class="post-meta">
+              <span class="post-date">November 02, 2025</span>
+              <span class="post-author">By Tech Investigations</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">cybersecurity</span>
+              <span class="tag">quantum computing</span>
+              <span class="tag">data breach</span>
+              <span class="tag">urgent</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+            <section class="summary-box">
+              <h2>TL;DR</h2>
+              <ul>
+                <li><strong>Incident:</strong> Unauthorized decryption of spectral-class archives via Side-Channel Q-Attack.</li>
+                <li><strong>Scope:</strong> 4.2 million private keys exposed; legacy banking systems primarily affected.</li>
+                <li><strong>Response:</strong> Global patch (v4.0.2) rolling out to all Quantum Key Distribution (QKD) nodes.</li>
+                <li><strong>Action Required:</strong> Administrators must rotate root certificates within 24 hours.</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>What we know so far</h2>
+              <p>Late last night, security researchers at NetGuard discovered a critical vulnerability in the specific firmware used by commercial Quantum Key Distribution (QKD) hardware. The exploit allows attackers to measure the state of entangled photons without alerting the intrusion detection system, effectively bypassing the non-cloning theorem guarantees.</p>
+              <p>The attack vector, dubbed "Phantom Photon," has been actively exploited for approximately 72 hours before detection.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Technical Autopsy: How 'Phantom Photon' Works</h2>
+              <p>The non-cloning theorem states that measuring a quantum state disturbs it. However, the 'Phantom Photon' exploit attacks the detector's "blind time"—the microsecond reset window after a photon is registered.</p>
+              <p>By flooding the detector with bright light pulses during this window, the attacker forces the detector into a linear mode, allowing them to read the polarization state of incoming qubits without triggering the quantum bit error rate (QBER) alarm. This is a classic "Trojan Horse" attack on the classical control hardware of a quantum system.</p>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Attack Phase</th>
+                    <th>Mechanism</th>
+                    <th>Detection Probability</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Injection</strong></td>
+                    <td>Bright light pulse during detector dead-time</td>
+                    <td>0.001% (Pre-Patch)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Measurement</strong></td>
+                    <td>Linear cloning of polarization state</td>
+                    <td>N/A (Classical physics)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Egress</strong></td>
+                    <td>Re-transmission of cloned photon</td>
+                    <td>&lt;1% QBER Increase</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="article-section">
+              <h2>Data Breach Statistics</h2>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number">4.2M</div>
+                  <div class="stat-label">Keys Exposed</div>
+                  <p class="stat-description">Total number of unique encryption identities potentially compromised.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">$1.2B</div>
+                  <div class="stat-label">Est. Damages</div>
+                  <p class="stat-description">Projected financial impact on the fintech sector over the next quarter.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">v4.0.2</div>
+                  <div class="stat-label">Critical Patch</div>
+                  <p class="stat-description">Version number of the firmware update that closes the side-channel gap.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">98%</div>
+                  <div class="stat-label">Patch Rate</div>
+                  <p class="stat-description">Target adoption rate required within 48 hours to prevent secondary cascades.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="article-section">
+              <h2>Expert Commentary</h2>
+              <blockquote class="expert-quote">
+                <p>"This is not a failure of quantum physics, but of engineering. The implementation of the decoy state protocol was flawed in the hardware buffer. Physics is secure; the code was not."</p>
+                <cite>— Sarah Turing, Chief Cryptographer, FutureSec Institute</cite>
+              </blockquote>
+            </section>
+
+             <section class="article-section">
+              <h2>Global Mitigation Strategies</h2>
+              <p>The International Telecommunication Union (ITU) has convened an emergency working group. The current recommendation involves a "Hybrid-Fallback" approach.</p>
+              <ul>
+                <li><strong>Phase 1 (Immediate):</strong> Switch all inter-bank settlements to Post-Quantum Cryptography (PQC) lattice-based algorithms (Kyber-1024).</li>
+                <li><strong>Phase 2 (48 Hours):</strong> Physically power-cycle all QKD optical repeaters to flush the firmware buffer.</li>
+                <li><strong>Phase 3 (Long-term):</strong> Mandate "detector efficiency mismatch" monitoring in all future QKD certification standards.</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <h2>Market Impact Analysis</h2>
+              <p>The breach has caused significant volatility in the "Quantum-Safe" ETF sector. While hardware manufacturers (like the one vulnerable to this exploit) have seen stock dips of 15-20%, software-based PQC firms have rallied, up 12% in pre-market trading.</p>
+              <p>Insurance adjusters estimate that if the 4.2 million keys are not rotated within the 24-hour window, the liability for fraudulent transactions could exceed $12 billion, triggering force majeure clauses in cloud security contracts.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Q&A: Security Implications</h2>
+              
+              <h3>Is my personal bank account safe?</h3>
+              <p>Likely yes. Consumer banking relies on TLS/SSL which, while theoretically vulnerable to future quantum computers, was not the specific target of this hardware exploit. This attack targeted inter-bank settlement layers.</p>
+
+              <h3>What is a "Side-Channel Q-Attack"?</h3>
+              <p>It is an attack that targets the physical implementation of a system rather than the algorithm. In this case, attackers measured the power consumption of the photon detector to infer the state of the qubit without measuring the qubit itself.</p>
+
+              <h3>What should IT admins do right now?</h3>
+              <p>Stop all QKD links immediately. Apply firmware patch v4.0.2. Force a full rotation of all session keys negotiated in the last 72 hours. Verify integrity logs for "ghost anomalies."</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Terminology: Cyber-Quantum Lexicon</h2>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Synonyms / Variants</th>
+                    <th>Context</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>QKD</strong></td>
+                    <td>Quantum Key Distribution, Quantum Cryptography</td>
+                    <td>A method of secure communication that implements a cryptographic protocol involving components of quantum mechanics.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Side-Channel</strong></td>
+                    <td>Hardware Leak, Implementation Attack</td>
+                    <td>Any attack based on information gained from the implementation of a computer system (timing, power, sound).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Decoy State</strong></td>
+                    <td>Photon Trap, Signal Masking</td>
+                    <td>A technique used in QKD to detect the presence of an eavesdropper by randomly inserting check signals.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="article-section">
+              <h2>Sources and Citations</h2>
+              <ul class="sources-list">
+                <li>NetGuard Security Bulletin #2025-998, "Phantom Photon Vulnerability."</li>
+                <li>NIST Post-Quantum Standards Group, "Advisory on Hardware Implementation Flaws," November 2025.</li>
+                <li>Financial Sector Information Sharing and Analysis Center (FS-ISAC), "Critical Alert: QKD Infrastructure."</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <div class="call-to-action">
+                <h3>System Status Check</h3>
+                <p>Verify if your node ID was among the compromised list using our secure lookup tool.</p>
+                <div class="cta-buttons">
+                  <a href="/contents" class="cta-btn primary">Check Node ID</a>
+                  <button class="cta-btn secondary">Download Patch Info</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+        body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfdfd;
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+        padding: 2rem;
+      }
+
+      .news-post {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        border-top: 5px solid #d93025;
+      }
+
+      .container {
+        padding: 2.5rem;
+      }
+
+      .post-header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .post-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #202124;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: #5f6368;
+        margin-bottom: 1rem;
+      }
+      
+      .post-date {
+        color: #d93025;
+        font-weight: 700;
+      }
+
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #fce8e6;
+        color: #c5221f;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .summary-box {
+        background: #fff8e1; /* Warning Yellow/Amber background for distinct feel */
+        border: 1px solid #ffe082;
+        border-left: 4px solid #fbc02d;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #f57f17;
+        font-weight: 800;
+      }
+
+      .summary-box ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+      
+      .summary-box li {
+        margin-bottom: 0.5rem;
+        color: #202124;
+      }
+
+      .article-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .article-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #202124;
+        margin-bottom: 1rem;
+      }
+
+      .article-section h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #202124;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .article-section p {
+        line-height: 1.7;
+        color: #3c4043;
+        margin-bottom: 1rem;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .stat-card {
+        background: #fff;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        padding: 1.2rem;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #d93025;
+        margin-bottom: 0.2rem;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #5f6368;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-description {
+        font-size: 0.85rem;
+        color: #3c4043;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      .expert-quote {
+        background: #f8f9fa;
+        border-left: 4px solid #188038; /* Green for expert verification */
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 2rem 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #3c4043;
+        margin-bottom: 0.8rem;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5f6368;
+        display: block;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .data-table th,
+      .data-table td {
+        border-bottom: 1px solid #dadce0;
+        padding: 0.75rem 0.5rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .data-table th {
+        color: #202124;
+        font-weight: 700;
+        background: #f1f3f4;
+      }
+      
+      .sources-list {
+         padding-left: 1.2rem;
+         color: #5f6368;
+         font-size: 0.95rem;
+      }
+
+      .call-to-action {
+        background: #f8f9fa;
+        border: 1px solid #dadce0;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+        
+        &.primary {
+          background: #d93025; /* Urgent action color */
+          color: white;
+          
+          &:hover {
+             background: #a50e0e;
+          }
+        }
+        
+        &.secondary {
+           background: white;
+           color: #d93025;
+           border: 1px solid #dadce0;
+           
+           &:hover {
+              background: #f1f3f4;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+        .stats-grid {
+           grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>

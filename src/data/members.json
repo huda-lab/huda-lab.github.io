@@ -71,7 +71,7 @@
     "name": "Pauline Wee",
     "type": "undergrad",
     "year_from": 2023,
-    "year_to": 2025,
+    "year_to": 2024,
     "title": "Student Researcher",
     "image": "images/members/Pauline_Wee.jpg"
   },
@@ -83,6 +83,14 @@
     "website": "https://miromannino.com/",
     "type": "RA",
     "year_to": 2023
+  },
+  {
+    "name": "Wuyeh Jobe",
+    "title": "Research Engineer",
+    "image": "images/members/wuyeh.jpg",
+    "email": "wj2331@nyu.edu",
+    "type": "RA",
+    "year_from": 2025
   },
   {
     "name": "Zain Tariq",

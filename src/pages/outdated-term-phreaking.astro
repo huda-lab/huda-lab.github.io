@@ -1,0 +1,513 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Phreaking: The history of phone network exploration. Understanding blue boxes, 2600Hz, and the legacy of pre-internet hacking." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Phreaking: The First Age of Hacking - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="outdated-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">Phreaking: Exploring the Analog Telephone Network</h1>
+             <div class="post-meta">
+              <span class="post-date">Historical Archive</span>
+              <span class="post-author">Curated by The Digital Museum</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">telecom history</span>
+              <span class="tag">hacking</span>
+              <span class="tag">analog era</span>
+              <span class="tag">legacy tech</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+             <section class="summary-box">
+              <h2>TL;DR</h2>
+              <ul>
+                <li><strong>Definition:</strong> The action of manipulating telephone signaling systems (60s-90s).</li>
+                <li><strong>Key Method:</strong> Replicating the 2600 Hz tone to seize control of trunk lines.</li>
+                <li><strong>Status:</strong> Obsolete. Modern VoIP and digital switching prevent frequency manipulation.</li>
+                <li><strong>Legacy:</strong> Laid the cultural and technical foundation for modern computer security.</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>What was Phreaking?</h2>
+              <p>Phreaking (a portmanteau of "phone" and "freak") refers to the exploration, study, and exploitation of telecommunication systems. It peaked between the late 1960s and early 1990s.</p>
+              <p>Phreaks used audio frequencies to manipulate the automated routing machinery of the Bell System. By playing specific tones, they could trick the network into granting free long-distance calls, accessing special operator circuits, or bridging multiple lines for conference calls.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Technical Schematic: The 2600Hz Loop</h2>
+              <p>The core vulnerability lay in "In-Band Signaling." The control signals (instruction to hang up, route call, billing) traveled on the same wire as the voice.</p>
+              <ul>
+                <li><strong>State 1 (Idle):</strong> The trunk line hums at 2600Hz to tell the switch "I am available."</li>
+                <li><strong>The Hack:</strong> A user dials a toll-free number (800) to open a line.</li>
+                <li><strong>The Exploit:</strong> The user blasts a perfect 2600Hz tone. The switch interprets this as a "hang up" but <em>keeps the circuit open</em> on the user's end.</li>
+                <li><strong>The Result:</strong> The user is now in "Operator Mode" with full root access to the switching center.</li>
+              </ul>
+            </section>
+            
+            <section class="article-section">
+              <h2>Historical Timeline</h2>
+               <div class="timeline">
+                 <div class="timeline-item">
+                    <div class="timeline-date">1957</div>
+                    <div class="timeline-content">Joe Engressia ("Joybubbles"), a blind 7-year-old, discovers whistling at 2600Hz resets phone lines.</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1971</div>
+                    <div class="timeline-content">Esquire magazine publishes "Secrets of the Blue Box," exposing phreaking to the mainstream.</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1972</div>
+                    <div class="timeline-content">Steve Wozniak and Steve Jobs sell "Blue Boxes" in UC Berkeley dorms.</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1980s</div>
+                    <div class="timeline-content">Transition to digital switching (SS7) begins the decline of audio-based exploits.</div>
+                 </div>
+               </div>
+            </section>
+
+            <section class="article-section">
+              <h2>Activity Statistics (Peak Era)</h2>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number">2600</div>
+                  <div class="stat-label">Hertz (Hz)</div>
+                  <p class="stat-description">The master frequency used to reset trunk lines (idle signal).</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">~$1,500</div>
+                  <div class="stat-label">Lost Revenue</div>
+                  <p class="stat-description">Estimated cost per "Blue Box" user per year to phone companies in 1975.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">0%</div>
+                  <div class="stat-label">Modern Viability</div>
+                  <p class="stat-description">Success rate of analog phreaking tools on today's LTE/Fiber backbones.</p>
+                </div>
+              </div>
+            </section>
+
+             <section class="article-section">
+              <h2>Terminology: The Colors of Hacking</h2>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Function</th>
+                    <th>Legacy Equivalent</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Blue Box</strong></td>
+                    <td>Emulates operator tones (MF) to route calls.</td>
+                    <td>Root access / Administrator privileges.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Red Box</strong></td>
+                    <td>Emulates coin drop tones for payphones.</td>
+                    <td>Payment gateway bypass.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Beige Box</strong></td>
+                    <td>A physical lineman's handset used to tap lines.</td>
+                    <td>Packet sniffer / Wiretap.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+             <section class="article-section">
+              <h2>Expert Quotations</h2>
+              <blockquote class="expert-quote">
+                <p>"Phreaking wasn't just about free calls. It was about curiosity. It was about looking at the largest machine ever built—the global telephone network—and asking: 'How does this really work?'"</p>
+                <cite>— Phil Lapsley, Author of *Exploding the Phone*</cite>
+              </blockquote>
+            </section>
+
+             <section class="article-section">
+              <h2>Cultural Impact: Apple's Origins</h2>
+              <p>Before the Apple I, Steve Jobs and Steve Wozniak built and sold "Blue Boxes" in UC Berkeley dorms. This venture taught them that they could manipulate massive corporate infrastructure with small, clever engineering.</p>
+              <p>"If it hadn't been for the Blue Boxes, there would have been no Apple," Steve Jobs famously stated. The phreaker ethos—understanding systems to master them—became the DNA of the personal computer revolution.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Legal Legacy: The CFAA</h2>
+              <p>The rampant spread of phreaking in the 80s led directly to the Computer Fraud and Abuse Act (CFAA) of 1986. Originally designed to protect "federal interest computers," it became the sweeping legislation that governs almost all computer crime today. The legal definition of "unauthorized access" was born from the sound of a whistle.</p>
+            </section>
+
+              <section class="article-section">
+              <h2>Q&A: Legacy and Modern Context</h2>
+              
+              <h3>Is phreaking illegal?</h3>
+              <p>Yes, theft of telecommunication services remains illegal. However, the specific techniques described here no longer function on modern networks, rendering them physically impossible to execute.</p>
+
+              <h3>Why did phreaking die out?</h3>
+              <p>It died due to "Out-of-Band Signaling" (SS7). The network separated the voice channel (what you hear) from the signaling channel (control data). Playing tones on the voice line no longer affected the control data.</p>
+
+              <h3>Are there modern phreaks?</h3>
+              <p>The term has evolved. Modern "phreaking" often refers to VoIP hacking, PBX exploitation, or SIM swapping, but the methodology is entirely digital, not acoustic.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Sources and Citations</h2>
+              <ul class="sources-list">
+                <li>Lapsley, Phil. *Exploding the Phone: The Untold Story of the Teenagers and Outlaws who Hacked Ma Bell*. Grove Press, 2013.</li>
+                <li>Rosenbaum, Ron. "Secrets of the Little Blue Box," *Esquire*, October 1971.</li>
+                <li>The 2600 Organization, *The Hacker Quarterly* Archives.</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <div class="call-to-action">
+                <h3>Visit the Archives</h3>
+                <p>Listen to original recordings of 1970s network tandems and intercept messages.</p>
+                <div class="cta-buttons">
+                  <a href="/contents" class="cta-btn primary">Back to Contents</a>
+                  <button class="cta-btn secondary">Audio Library</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+        body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfbf7; /* Aged paper tone */
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+        padding: 2rem;
+      }
+
+      .outdated-post {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+      }
+
+      .container {
+        padding: 3rem;
+      }
+
+      .post-header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #d1d1d1;
+      }
+
+      .post-title {
+        font-size: 2.4rem;
+        font-family: "Courier New", Courier, monospace; /* Retro mono font */
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #666;
+        font-family: "Courier New", Courier, monospace;
+      }
+      
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #eee;
+        color: #555;
+        padding: 0.2rem 0.6rem;
+        border: 1px solid #ccc;
+        font-size: 0.75rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .summary-box {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-left: 4px solid #555;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #333;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .summary-box ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+      
+      .summary-box li {
+        margin-bottom: 0.5rem;
+        color: #444;
+      }
+
+      .article-section {
+        margin-bottom: 3rem;
+      }
+
+      .article-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.2rem;
+        display: inline-block;
+      }
+
+      .article-section h3 {
+         font-size: 1.2rem;
+         color: #333;
+         margin-top: 1.5rem;
+         margin-bottom: 0.8rem;
+         font-weight: 700;
+      }
+      
+      .article-section p {
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+      
+      .timeline {
+         border-left: 2px solid #ccc;
+         padding-left: 1.5rem;
+         margin: 1rem 0;
+      }
+      
+      .timeline-item {
+         margin-bottom: 1.5rem;
+         position: relative;
+         
+         &:last-child {
+            margin-bottom: 0;
+         }
+         
+         &::before {
+            content: "";
+            position: absolute;
+            left: -1.9rem;
+            top: 0.4rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: #fff;
+            border: 2px solid #777;
+            border-radius: 50%;
+         }
+      }
+      
+      .timeline-date {
+         font-weight: 700;
+         color: #2c5aa0;
+         margin-bottom: 0.2rem;
+         font-family: "Courier New", Courier, monospace;
+      }
+      
+      .timeline-content {
+         font-size: 0.95rem;
+         color: #444;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .stat-card {
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 1.2rem;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 0.2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-description {
+        font-size: 0.85rem;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .expert-quote {
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        position: relative;
+      }
+      
+      .expert-quote::before {
+         content: "“";
+         font-size: 4rem;
+         color: #ddd;
+         position: absolute;
+         top: -0.5rem;
+         left: 1rem;
+         z-index: 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 0.8rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #555;
+        display: block;
+        text-align: right;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        border: 1px solid #999;
+      }
+
+      .data-table th,
+      .data-table td {
+        border: 1px solid #999;
+        padding: 0.8rem;
+        text-align: left;
+      }
+
+      .data-table th {
+        background: #e0e0e0;
+        color: #222;
+        font-weight: 700;
+      }
+      
+      .sources-list {
+         padding-left: 1.2rem;
+         color: #444;
+         font-family: serif;
+      }
+
+      .call-to-action {
+        background: #333;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: "Courier New", Courier, monospace;
+        
+        &.primary {
+          background: #fff;
+          color: #000;
+          
+          &:hover {
+             background: #ddd;
+          }
+        }
+        
+        &.secondary {
+           background: transparent;
+           color: #fff;
+           border: 1px solid #fff;
+           
+           &:hover {
+              background: #555;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+        .stats-grid {
+           grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>

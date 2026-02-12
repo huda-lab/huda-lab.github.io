@@ -1,0 +1,279 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="AI Output Nutrition Labels: A Standardized Disclosure Layer for Enterprise AI. Proposing glanceable labels for transparency, accountability, and governance." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>AI Nutrition Labels: Enterprise Transparency - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="news-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">AI Output Nutrition Labels: A Standardized Disclosure Layer for Enterprise AI</h1>
+            <div class="post-meta">
+              <span class="post-date">Experimental Series</span>
+              <span class="post-author">By Enterprise Output Transparency Forum</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">Enterprise AI</span>
+              <span class="tag">Transparency</span>
+              <span class="tag">Governance</span>
+              <span class="tag">Experimental</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+            <section class="summary-box">
+              <h2>Overview</h2>
+              <p>As generative AI moves deeper into back-office and customer-facing workflows, enterprises keep encountering the same tension: responses appear authoritative even when they are thinly sourced or costly to validate. The solution: <strong>AI Output Nutrition Labels</strong>.</p>
+              <ul>
+                <li>Compact, glanceable label in the product UI.</li>
+                <li>Full “receipt” written to logs for governance.</li>
+                <li>Includes model version, prompts, and tool trace.</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>Why labels are on the enterprise agenda</h2>
+              <p>Large buyers increasingly view generative AI as a socio-technical system. Output labels compress that complexity into a single, inspectable object that procurement, risk, and product teams can all reason about.</p>
+              <blockquote class="expert-quote">
+                <p>“We don’t need or expect perfection from models. We need them to ship answers with receipts we can audit.”</p>
+                <cite>— Amina K., Head of Model Governance</cite>
+              </blockquote>
+            </section>
+
+            <section class="article-section border-top">
+              <h2>Potential Limitations</h2>
+              <ul>
+                <li><strong>Metric gaming:</strong> Vendors may optimize for “good-looking labels” rather than real robustness.</li>
+                <li><strong>Policy non-uniformity:</strong> Tiers can encode different obligations across organizations.</li>
+                <li><strong>Calibration drift:</strong> Confidence bands must be retrained and monitored as models evolve.</li>
+              </ul>
+            </section>
+
+            <section class="article-section border-top">
+              <h2>Contextual references</h2>
+              <ol>
+                <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> — experimental investigation into auditable and transparent AI deployments.</li>
+                <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf">NIST AI RMF 1.0 (PDF)</a> — focus on evaluation, monitoring, and disclosure mechanisms in enterprise AI.</li>
+              </ol>
+            </section>
+
+             <section class="article-section">
+              <div class="call-to-action">
+                <h3>Explore the Full Series</h3>
+                <p>Review the complete set of eight experimental briefings on AI risk and infrastructure evolution.</p>
+                <div class="cta-buttons">
+                  <a href="/g-news-35" class="cta-btn secondary">Previous: Synthetic Majority Collapse</a>
+                  <a href="/contents" class="cta-btn primary">Back to Project Map</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+      body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfdfd;
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+        padding: 2rem;
+      }
+
+      .news-post {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        border-top: 5px solid #5f6368; /* Gray accent for enterprise/governance */
+      }
+
+      .container {
+        padding: 2.5rem;
+      }
+
+      .post-header {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+      }
+
+      .post-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #202124;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: #5f6368;
+        margin-bottom: 1rem;
+      }
+      
+      .post-date {
+        color: #5f6368;
+        font-weight: 700;
+      }
+
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #f1f3f4;
+        color: #3c4043;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .summary-box {
+        background: #f1f3f4;
+        border: 1px solid #e8eaed;
+        border-left: 4px solid #5f6368;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #3c4043;
+        font-weight: 800;
+      }
+
+      .article-section {
+        margin-bottom: 2.5rem;
+
+        &.border-top {
+          border-top: 1px solid #eee;
+          padding-top: 2rem;
+        }
+      }
+
+      .article-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #202124;
+        margin-bottom: 1rem;
+      }
+      
+      .article-section p {
+        line-height: 1.7;
+        color: #3c4043;
+        margin-bottom: 1rem;
+      }
+
+      .expert-quote {
+        background: #f8f9fa;
+        border-left: 4px solid #5f6368;
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 2rem 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #3c4043;
+        margin-bottom: 0.8rem;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5f6368;
+        display: block;
+      }
+
+      .call-to-action {
+        background: #f8f9fa;
+        border: 1px solid #dadce0;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+        
+        &.primary {
+          background: #5f6368;
+          color: white;
+          
+          &:hover {
+             background: #3c4043;
+          }
+        }
+        
+        &.secondary {
+           background: white;
+           color: #5f6368;
+           border: 1px solid #dadce0;
+           
+           &:hover {
+              background: #f1f3f4;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </body>
+</html>

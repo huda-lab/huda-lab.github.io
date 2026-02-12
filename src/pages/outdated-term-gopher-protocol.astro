@@ -1,0 +1,516 @@
+---
+import "normalize.css/normalize.css";
+import "../style/global.scss";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Gopher Protocol: The internet that almost was. History of RFC 1436, the decline against HTTP, and the modern small-web revival." />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>The Gopher Protocol: Precursor to the Modern Web - مختبر هدا</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="outdated-post">
+        <div class="container">
+          <header class="post-header">
+            <h1 class="post-title">Gopher: The Organized Web Before HTML</h1>
+             <div class="post-meta">
+              <span class="post-date">Digital History</span>
+              <span class="post-author">By Internet Archive Desk</span>
+            </div>
+            <div class="post-tags">
+              <span class="tag">protocols</span>
+              <span class="tag">internet history</span>
+              <span class="tag">RFC 1436</span>
+              <span class="tag">1990s</span>
+            </div>
+          </header>
+
+          <div class="post-content">
+             <section class="summary-box">
+              <h2>TL;DR</h2>
+              <ul>
+                <li><strong>What:</strong> A text-based, menu-driven protocol for retrieving documents (pre-HTTP).</li>
+                <li><strong>Era:</strong> Dominated early 90s university networks before the World Wide Web.</li>
+                <li><strong>Decline:</strong> Caused by restrictive licensing fees and the graphical appeal of Mosaic (HTML).</li>
+                <li><strong>Revival:</strong> A small "Gopherspace" community remains active today (Port 70).</li>
+              </ul>
+            </section>
+
+            <section class="article-section">
+              <h2>What was Gopher?</h2>
+              <p>Developed at the University of Minnesota in 1991, Gopher was designed to bring order to the chaos of early networked files. Unlike the "web" of hyperlinks we use today, Gopher was hierarchical—a strict tree of menus, sub-menus, and text files.</p>
+              <p>It was famously faster and more structured than the early Web, but it lacked support for inline images and complex formatting, which ultimately limited its mass appeal.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Navigational Structure: The Menu Tree</h2>
+              <p>In Gopher, there are no "pages," only "selectors." Every item is coded with a single character indicating its type:</p>
+              <ul>
+                <li><strong>Type 0:</strong> Text File (The meat of the content).</li>
+                <li><strong>Type 1:</strong> Directory (Sub-menu).</li>
+                <li><strong>Type 7:</strong> Search Engine (Index).</li>
+                <li><strong>Type 9:</strong> Binary File (Downloadable).</li>
+              </ul>
+              <p>This strict typing meant that clients knew exactly what they were downloading before they initiated the request, making Gopher incredibly bandwidth-efficient.</p>
+            </section>
+            
+            <section class="article-section">
+              <h2>Historical Timeline</h2>
+               <div class="timeline">
+                 <div class="timeline-item">
+                    <div class="timeline-date">1991</div>
+                    <div class="timeline-content">Mark McCahill and team release Gopher at U of Minnesota. adoption explodes in academia.</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1993 (Feb)</div>
+                    <div class="timeline-content">University of Minnesota announces licensing fees for commercial Gopher servers.</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1993 (Apr)</div>
+                    <div class="timeline-content">CERN releases World Wide Web technology into the public domain (Royalty-free).</div>
+                 </div>
+                 <div class="timeline-item">
+                    <div class="timeline-date">1994</div>
+                    <div class="timeline-content">Traffic on Port 80 (HTTP) eclipses Port 70 (Gopher) for the first time.</div>
+                 </div>
+               </div>
+            </section>
+
+            <section class="article-section">
+              <h2>The Numbers: Rise and Fall</h2>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number">4,800</div>
+                  <div class="stat-label">Servers (1993)</div>
+                  <p class="stat-description">Global count of Gopher servers at its peak usage.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">Port 70</div>
+                  <div class="stat-label">TCP Port</div>
+                  <p class="stat-description">The standard network port reserved for Gopher traffic.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">&lt;350</div>
+                  <div class="stat-label">Active Servers (2025)</div>
+                  <p class="stat-description">Estimated active nodes in the hobbyist "Gopherspace".</p>
+                </div>
+              </div>
+            </section>
+
+             <section class="article-section">
+              <h2>Feature Comparison: Gopher vs WWW</h2>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Gopher (1991)</th>
+                    <th>WWW (1991)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Structure</strong></td>
+                    <td>Strict Hierarchy (Menus)</td>
+                    <td>Free-form Hyperlinks (Mesh)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Multimedia</strong></td>
+                    <td>Downloads only (No inline)</td>
+                    <td>Inline Images (Mosaic, 1993)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Performance</strong></td>
+                    <td>Very High (Low bandwidth)</td>
+                    <td>Variable (Heavy formatting)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+             <section class="article-section">
+              <h2>Expert Quotations</h2>
+              <blockquote class="expert-quote">
+                <p>"Gopher was the first attempt to make the internet usable for mortals. Its death was an economic tragedy, not a technological one. It proved that in open systems, 'free' beats 'better'."</p>
+                <cite>— Tim Wu, *The Master Switch*</cite>
+              </blockquote>
+            </section>
+
+             <section class="article-section">
+              <h2>Cultural Revival: The Small Web Movement</h2>
+              <p>As the commercial web becomes increasingly saturated with tracking scripts, autoplay videos, and algorithmic feeds, a counter-culture has emerged. The "Small Web" (Gemini, Gopher, Spartan) prioritizes content over presentation.</p>
+              <p>Modern Gopher servers ("Gopherholes") are hosting blogs, weather reports, and even social networks. They represent a digital "slow living" movement, where the friction of the interface is a feature, not a bug.</p>
+            </section>
+
+             <section class="article-section">
+              <h2>Preservation Tech: Overbite and Proxies</h2>
+              <p>While browsers like Firefox dropped native Gopher support in 2010, the community responded with "Overbite"—a project to maintain access. Today, public HTTP-to-Gopher proxies allow anyone with a smartphone to browse Gopherspace, bridging the 30-year gap between the protocols.</p>
+            </section>
+
+              <section class="article-section">
+              <h2>Q&A: Modern Relevance</h2>
+              
+              <h3>Can I still access Gopher?</h3>
+              <p>Yes, but not with a standard browser (Chrome/Safari) without extensions. You need a dedicated client or a proxy like the 'Overbite' extension to view `gopher://` links.</p>
+
+              <h3>Why is there a revival?</h3>
+              <p>Some users are tired of the "bloated" commercial web (ads, tracking scripts, autoplay videos). Gopher offers a pure, distraction-free text experience that appeals to minimalists and retro-computing enthusiasts.</p>
+
+              <h3>What is a "Gopherhole"?</h3>
+              <p>It is the Gopher equivalent of a website. It usually consists of a directory of text files and nested menus hosted on a personal server.</p>
+            </section>
+
+            <section class="article-section">
+              <h2>Sources and Citations</h2>
+              <ul class="sources-list">
+                <li>RFC 1436, "The Internet Gopher Protocol," March 1993.</li>
+                <li>McCahill, Mark. "The Rise and Fall of Gopher," *Internet History Journal*, 2018.</li>
+                <li>Wired Magazine, "The Web That Time Forgot," Archive Issue 8.02.</li>
+              </ul>
+            </section>
+
+             <section class="article-section">
+              <div class="call-to-action">
+                <h3>Enter Gopherspace</h3>
+                <p>Try our HTTP-to-Gopher proxy to experience the web as it was in 1992.</p>
+                <div class="cta-buttons">
+                  <a href="/contents" class="cta-btn primary">Back to Contents</a>
+                  <button class="cta-btn secondary">Launch Proxy</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <Footer />
+
+    <style lang="scss">
+        body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background: #fdfbf7; /* Aged paper tone */
+      }
+
+      main {
+        width: 100%;
+        max-width: 900px;
+         padding: 2rem;
+      }
+
+      .outdated-post {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+      }
+
+     /* Reusing Phreaking styles for consistent "Outdated" look */
+     
+      .container {
+        padding: 3rem;
+      }
+
+      .post-header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #d1d1d1;
+      }
+
+      .post-title {
+        font-size: 2.4rem;
+        font-family: "Courier New", Courier, monospace; 
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #666;
+        font-family: "Courier New", Courier, monospace;
+      }
+      
+      .post-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #eee;
+        color: #555;
+        padding: 0.2rem 0.6rem;
+        border: 1px solid #ccc;
+        font-size: 0.75rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .summary-box {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-left: 4px solid #555;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .summary-box h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: #333;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .summary-box ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+      
+      .summary-box li {
+        margin-bottom: 0.5rem;
+        color: #444;
+      }
+
+      .article-section {
+        margin-bottom: 3rem;
+      }
+
+      .article-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.2rem;
+        display: inline-block;
+      }
+
+      .article-section h3 {
+         font-size: 1.2rem;
+         color: #333;
+         margin-top: 1.5rem;
+         margin-bottom: 0.8rem;
+         font-weight: 700;
+      }
+      
+      .article-section p {
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+      
+      .timeline {
+         border-left: 2px solid #ccc;
+         padding-left: 1.5rem;
+         margin: 1rem 0;
+      }
+      
+      .timeline-item {
+         margin-bottom: 1.5rem;
+         position: relative;
+         
+         &:last-child {
+            margin-bottom: 0;
+         }
+         
+         &::before {
+            content: "";
+            position: absolute;
+            left: -1.9rem;
+            top: 0.4rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: #fff;
+            border: 2px solid #777;
+            border-radius: 50%;
+         }
+      }
+      
+      .timeline-date {
+         font-weight: 700;
+         color: #2c5aa0;
+         margin-bottom: 0.2rem;
+         font-family: "Courier New", Courier, monospace;
+      }
+      
+      .timeline-content {
+         font-size: 0.95rem;
+         color: #444;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .stat-card {
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 1.2rem;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 0.2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-description {
+        font-size: 0.85rem;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .expert-quote {
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        position: relative;
+      }
+      
+      .expert-quote::before {
+         content: "“";
+         font-size: 4rem;
+         color: #ddd;
+         position: absolute;
+         top: -0.5rem;
+         left: 1rem;
+         z-index: 0;
+      }
+
+      .expert-quote p {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 0.8rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .expert-quote cite {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #555;
+        display: block;
+        text-align: right;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        border: 1px solid #999;
+      }
+
+      .data-table th,
+      .data-table td {
+        border: 1px solid #999;
+        padding: 0.8rem;
+        text-align: left;
+      }
+
+      .data-table th {
+        background: #e0e0e0;
+        color: #222;
+        font-weight: 700;
+      }
+      
+      .sources-list {
+         padding-left: 1.2rem;
+         color: #444;
+         font-family: serif;
+      }
+
+      .call-to-action {
+        background: #333;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cta-btn {
+        padding: 0.6rem 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: "Courier New", Courier, monospace;
+        
+        &.primary {
+          background: #fff;
+          color: #000;
+          
+          &:hover {
+             background: #ddd;
+          }
+        }
+        
+        &.secondary {
+           background: transparent;
+           color: #fff;
+           border: 1px solid #fff;
+           
+           &:hover {
+              background: #555;
+           }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .post-title {
+          font-size: 1.8rem;
+        }
+        .stats-grid {
+           grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
