@@ -1,6 +1,6 @@
 ---
 title: "Stochastic SketchRefine: Scaling In-Database Decision-Making under Uncertainty to Millions of Tuples."
-link: "https://dl.acm.org/doi/10.1145/3737450"
+link: "https://dl.acm.org/doi/abs/10.14778/3746405.3746431"
 where: "VLDB 2025"
 when: "2025-05"
 authors: [ 
@@ -15,7 +15,7 @@ tags: ["dm"]
 links: [
   {
     txt: "Paper",
-    ref: "/papers/stochastic-sketchrefine"
+    ref: "/papers/stochastic-sketchrefine.pdf"
   }
 ]
 ---
