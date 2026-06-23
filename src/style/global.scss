@@ -64,6 +64,18 @@ a:hover {
   color: var(--c-link-hover);
 }
 
+.briefing-post a,
+.briefing-post a:active,
+.briefing-post a:visited {
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 0.12em;
+}
+
+.briefing-post a:hover {
+  text-decoration: underline;
+}
+
 ul {
   padding-inline-start: 1.5rem;
 
